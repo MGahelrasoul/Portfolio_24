@@ -16,8 +16,46 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false)
 
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs
+      .send(
+        'service_x41aso8',
+        'template_b5dpgsw',
+        {
+          from_name: form.name,
+          to_name: 'Mohammed',
+          from_email: form.email,
+          to_email: 'M97gahelrasoul@gmail.com',
+          message: form.message,
+        },
+        'NshC_rbPtWtlauv53'
+      )
+      .then(
+        () => {
+          setLoading(false)
+          alert("Thank you, I'll get back to you as soon as possible!")
+          setForm({
+            name: '',
+            email: '',
+            message: '',
+          })
+        },
+        (error) => {
+          setLoading(false)
+
+          console.log(error)
+
+          alert('Ahh, something went wrong.')
+        }
+      )
+  }
 
   return (
     <div
@@ -34,7 +72,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap"
+          className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
@@ -63,27 +101,28 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-            rows='7'
+              rows="7"
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What woudl you like to say ..."
+              placeholder="Leave your message here..."
               className="bg-tertiary py-4 px-6 placeholder:text-secondary 
                         text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
 
           <button
-          type='submit'
-          className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary roudned-xl'
+            type="submit"
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
       </motion.div>
+
       <motion.div
-      variants={slideIn('right', 'tween', 0.2, 1)}
-      className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>

@@ -12,11 +12,25 @@ import {
   StarsCanvas,
 } from "./components";
 
+
+  // #FFBA08 lighter
+  // #F48C06 darker
+  
+  // #1a191d
+  // 03071E
+
+  // 
+  // old
+  // #ffd864
+  // #d2b2a2
+  // #1c1916
+
+
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className="">
             <Navbar />
             <Hero />
         </div>
