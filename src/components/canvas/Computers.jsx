@@ -1,29 +1,40 @@
 import { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
+import {
+  PresentationControls,
+  Preload,
+  useGLTF,
+} from '@react-three/drei'
 
 import CanvasLoader from '../Loader'
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf')
+  const computer = useGLTF('./room/scene.gltf')
+  console.log(computer)
 
   return (
-    <mesh>
-      <hemisphereLight intensity={0.55} groundColor="orange" />
-      <pointLight intensity={1} />
+    <mesh castShadow>
+      <directionalLight intensity={0.5} color="#1B03A3" />
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+        position={[1.1, 0.15, -0.55]}
+        angle={1.571}
+        penumbra={0.5}
+        intensity={0.75}
+        color="#FFA500"
       />
+      <spotLight
+        position={[-0.55, 0.15, 1.1]}
+        angle={1.571}
+        penumbra={0.5}
+        intensity={0.75}
+        color="#FF69B4"
+      />
+      <ambientLight intensity={0.25} color="#1B03A3" />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 0.7 : 0.85}
+        position={isMobile ? [-2, -1, -2] : [0, -1.25, 0]}
+        rotation={[0.25, 0, -0.25]}
       />
     </mesh>
   )
@@ -33,7 +44,7 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 500px)')
+    const mediaQuery = window.matchMedia('(max-width: 640px)')
 
     setIsMobile(mediaQuery.matches)
 
@@ -50,18 +61,23 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
+      flat
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ zoom: 1, position: [0, 0, 10], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
+        <PresentationControls
+          snap
+          global
+          zoom={1.2}
+          rotation={[0, -Math.PI / 4, 0]}
+          polar={[-Math.PI / 7.5, Math.PI / 7.5]}
+          azimuth={[-Math.PI / 5, Math.PI / 5]}
+        >
+          <Computers isMobile={isMobile} />
+        </PresentationControls>
       </Suspense>
       <Preload all />
     </Canvas>

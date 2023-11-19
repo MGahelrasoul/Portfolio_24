@@ -22,8 +22,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 
-import metaverse from "./carrent.png";
-import threejsp from "./jobit.png";
+import metaverse from "./metaverse.png";
+import threejsp from "./threejsp.png";
 import yelpcamp from "./thumb_YelpCamp.jpg";
 import weather from "./thumb_WeatherApp.jpg";
 import mapsapi from "./thumb_MapsApi.jpg";

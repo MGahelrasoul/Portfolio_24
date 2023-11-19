@@ -19,6 +19,14 @@
   display: block;
 }
 
+.bg-card-link {
+  background-color: #1a191d;
+  transition: .5s ease;
+}
+.bg-card-link:hover {
+  background-color: #03071E;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(

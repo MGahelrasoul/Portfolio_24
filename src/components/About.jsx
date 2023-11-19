@@ -26,7 +26,7 @@ const ServiceCard = ({ index, title, icon }) => {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className='text-white text-[20px] font-bold text-center'>
+          <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
         </div>
@@ -44,16 +44,15 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Frontend Developer with experience in frontend / backend web
-        development. Developed and deployed multiple web applications, as well
-        as researched and analyzed stakeholder needs for website functionality,
-        resulting in 12% increase in user activity and website viewership.
-        Proficient in HTML5, CSS3, JavaScript, React.js, Node.js, Express.js,
-        MongoDB, Material UI, and Bootstrap, with hands-on experience creating
-        responsive and visually appealing interfaces.
+        I'm a Web Developer with experience in Frontend / Backend web
+        development. I've developed and deployed multiple web applications, as
+        well as researched and analyzed stakeholder needs for website
+        functionality. Proficient in ReactJS, NodeJS and TypeScript, I have
+        hands-on experience creating responsive and visually appealing
+        interfaces with various frameworks and libraries.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
@@ -65,4 +64,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, 'about')

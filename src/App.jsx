@@ -4,7 +4,7 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
+  // Feedbacks,
   Hero,
   Navbar,
   Tech,
@@ -19,18 +19,21 @@ import {
   // #1a191d
   // 03071E
 
-  // 
+  // 211e35
+
   // old
   // #ffd864
   // #d2b2a2
   // #1c1916
+
+  //DCCEC5
 
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
             <Hero />
         </div>
@@ -38,7 +41,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
         <div className="relative z-0">
             <Contact />
             <StarsCanvas />
