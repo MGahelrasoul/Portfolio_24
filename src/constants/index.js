@@ -124,7 +124,7 @@ const experiences = [
   {
     title: 'Systems Technician',
     company_name: 'TalentPro Inc',
-    iconBg: '#383E56',
+    iconBg: '#1a191d',
     date: 'Feb 2019 - Dec 2019',
     points: [
       'Diagnosed and troubleshot software, hardware, and network; researched, analyzed, and rectified technical problems, reducing call resolution to 5 minutes or less, with 93% of calls resolved on first contact.',
@@ -136,7 +136,7 @@ const experiences = [
   {
     title: 'Systems Specialist',
     company_name: 'GEICO',
-    iconBg: '#E6DEDD',
+    iconBg: '#DCCEC5',
     date: 'Dec 2019 - April 2021',
     points: [
       'Researched Content Management Systems (CMS), Accessibility Standards, and Mobile/Cross-browser Compatibility optimization used to improve the internal Geico IT website frontend impacting 60,000 agents.',
@@ -147,7 +147,7 @@ const experiences = [
   {
     title: 'Junior Web Developer',
     company_name: 'Kalo Technologies',
-    iconBg: '#383E56',
+    iconBg: '#1a191d',
     date: 'Nov 2021 - May 2022',
     points: [
       'Collaborated with stakeholders to create static, dynamic, e-commerce, and portal web applications,',
@@ -160,7 +160,7 @@ const experiences = [
   {
     title: 'Frontend Developer',
     company_name: 'Finding Farmers',
-    iconBg: '#E6DEDD',
+    iconBg: '#DCCEC5',
     date: 'May 2022 - Jan 2023',
     points: [
       'Designed, developed, tested, and implemented responsive react web applications with modern frontend and backend frameworks, ensuring seamless integration, friendly user interfaces, and a consistent user experience.',
@@ -174,7 +174,7 @@ const experiences = [
     title: 'Manager',
     company_name: 'Kumon',
     // icon: kumon,
-    iconBg: '#383E56',
+    iconBg: '#1a191d',
     date: 'Jan 2023 - Current',
     points: [
       'Analyzed the learning process to identify areas of improvement and spearheaded collaborative efforts to implement tailored solutions that aligned with stakeholder requirements and needs.',
