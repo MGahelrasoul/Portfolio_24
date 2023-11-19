@@ -12,7 +12,6 @@ import {
   StarsCanvas,
 } from "./components";
 
-
   // #FFBA08 lighter
   // #F48C06 darker
   
