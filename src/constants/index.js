@@ -214,28 +214,28 @@ const testimonials = [
 ]
 
 const projects = [
-  {
-    name: 'Metaverse Madness',
-    description:
-      'Comprehensive product site exploring the metaverse with a curated selection of products.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'node',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: metaverse,
-    source_code_link: '#',
-    source_site_link: '#',
-  },
+  // {
+  //   name: 'Metaverse Madness',
+  //   description:
+  //     'Comprehensive product site exploring the metaverse with a curated selection of products.',
+  //   tags: [
+  //     {
+  //       name: 'react',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'node',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'tailwind',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: metaverse,
+  //   source_code_link: '#',
+  //   source_site_link: '#',
+  // },
   {
     name: 'Threejs Project',
     description:
