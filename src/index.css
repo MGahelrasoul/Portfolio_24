@@ -12,6 +12,11 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+html,
+body,
+#root {
+  overflow-x: hidden;
+}
 
 .hash-span {
   margin-top: -100px;
@@ -25,6 +30,10 @@
 }
 .bg-card-link:hover {
   background-color: #03071E;
+}
+
+.bg-nav-mobile {
+  background-color: #1a191d;
 }
 
 .black-gradient {

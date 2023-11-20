@@ -26,7 +26,7 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full sm:h-[230px]">
           <img
             src={image}
             alt={name}
@@ -34,7 +34,7 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {/* github */}
+
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className="bg-card-link w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -45,7 +45,7 @@ const ProjectCard = ({
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-            {/* site */}
+
             {!source_site_link ? (
               ''
             ) : (
@@ -82,7 +82,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div>
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My works</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>

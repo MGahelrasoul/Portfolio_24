@@ -901,6 +901,19 @@
 		},
 		{
 			"doubleSided":true,
+      "emissiveFactor":[
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture":{
+        "index":3
+      },
+			"extensions":{
+				"KHR_materials_emissive_strength":{
+					"emissiveStrength":0.25
+				}
+			},
 			"name":"bbposter",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
@@ -938,6 +951,19 @@
 		},
 		{
 			"doubleSided":true,
+      "emissiveFactor":[
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture":{
+        "index":4
+      },
+			"extensions":{
+				"KHR_materials_emissive_strength":{
+					"emissiveStrength":0.5
+				}
+			},
 			"name":"xfilesposter",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
@@ -949,6 +975,19 @@
 		},
 		{
 			"doubleSided":true,
+      "emissiveFactor":[
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture":{
+        "index":5
+      },
+			"extensions":{
+				"KHR_materials_emissive_strength":{
+					"emissiveStrength":0.25
+				}
+			},
 			"name":"stposter",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{

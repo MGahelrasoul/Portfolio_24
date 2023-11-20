@@ -16,14 +16,14 @@ const Computers = ({ isMobile }) => {
     <mesh castShadow>
       <directionalLight intensity={0.5} color="#1B03A3" />
       <spotLight
-        position={[1.1, 0.15, -0.55]}
+        position={isMobile ? [1.1, 0.15, -0.55] : [1.25, .25, -0.75]}
         angle={1.571}
         penumbra={0.5}
         intensity={0.75}
         color="#FFA500"
       />
       <spotLight
-        position={[-0.55, 0.15, 1.1]}
+        position={isMobile ? [-0.55, 0.15, 1.1] : [-0.7, 0.25, 1.3]}
         angle={1.571}
         penumbra={0.5}
         intensity={0.75}
@@ -33,7 +33,7 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.85}
-        position={isMobile ? [-2, -1, -2] : [0, -1.25, 0]}
+        position={[0, -1.25, 0]}
         rotation={[0.25, 0, -0.25]}
       />
     </mesh>
@@ -62,7 +62,7 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       flat
-      frameloop="demand"
+      frameloop={isMobile ? "demand" : "always"}
       shadows
       camera={{ zoom: 1, position: [0, 0, 10], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}

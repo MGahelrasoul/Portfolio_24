@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {
   Decal,
@@ -38,9 +38,27 @@ const Ball = (props) => {
 }
 
 const BallCanvas = ({ icon }) => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 640px)')
+
+    setIsMobile(mediaQuery.matches)
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches)
+    }
+
+    mediaQuery.addEventListener('change', handleMediaQueryChange)
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+    }
+  }, [])
+
   return (
     <Canvas
-      frameloop="always"
+      frameloop={isMobile ? "demand" : "always"}
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
