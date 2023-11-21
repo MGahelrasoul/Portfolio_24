@@ -19,7 +19,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-    className='w-full h-full'>
+    className='sm:w-auto w-full'>
       <Tilt
         options={{
           max: 45,
