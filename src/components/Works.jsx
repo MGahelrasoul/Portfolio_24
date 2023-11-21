@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
@@ -17,7 +18,8 @@ const ProjectCard = ({
   source_site_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+    className='w-full h-full'>
       <Tilt
         options={{
           max: 45,
@@ -30,11 +32,10 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full sm:h-full xs:h-[130px] h-[115px] object-cover rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className="bg-card-link w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -46,9 +47,7 @@ const ProjectCard = ({
               />
             </div>
 
-            {!source_site_link ? (
-              ''
-            ) : (
+            {!source_site_link ? null : (
               <div
                 onClick={() => window.open(source_site_link, '_blank')}
                 className="bg-card-link w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -80,6 +79,19 @@ const ProjectCard = ({
 }
 
 const Works = () => {
+  useEffect(() => {
+    const preloadImages = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 200))
+      
+      projects.forEach((project) => {
+        const img = new Image()
+        img.src = project.image
+      })
+    }
+
+    preloadImages()
+  }, [])
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -87,18 +99,18 @@ const Works = () => {
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          The following projects showcase my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos. These reflect my ability to
-          solve complex problems, work with different technologies, and manage
-          projects effectively.
-        </motion.p>
-      </div>
+      {/* <div className="w-full flex"> */}
+      <motion.p
+        variants={fadeIn('', '', 0.1, 1)}
+        className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        The following projects showcase my skills and experience through
+        real-world examples of my work. Each project is briefly described with
+        links to code repositories and live demos. These reflect my ability to
+        solve complex problems, work with different technologies, and manage
+        projects effectively.
+      </motion.p>
+      {/* </div> */}
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
