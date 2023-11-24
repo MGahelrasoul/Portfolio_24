@@ -16,6 +16,7 @@ import {
   figma,
   // docker,
   metaverse,
+  hoobk,
   threejsp,
   yelpcamp,
   mapsapi,
@@ -52,11 +53,11 @@ const services = [
     icon: web,
   },
   {
-    title: 'React Frontend',
+    title: 'ReactJS Frontend',
     icon: mobile,
   },
   {
-    title: 'Node Backend',
+    title: 'NodeJS Backend',
     icon: backend,
   },
   {
@@ -129,7 +130,7 @@ const experiences = [
     points: [
       'Diagnosed and troubleshot software, hardware, and network; researched, analyzed, and rectified technical problems, reducing call resolution to 5 minutes or less, with 93% of calls resolved on first contact.',
       ' Generated Tier 1 troubleshooting protocols and delivered training sessions for Tier 1 techs, increasing department first call resolution by 12% and decreasing call resolution time to below 10 minutes per incident.',
-      ' Led imaging and configuration of over 6000 AD adjusters\' computers to Windows 10, eradicating Windows 7 security vulnerabilities from the enterprise.',
+      " Led imaging and configuration of over 6000 AD adjusters' computers to Windows 10, eradicating Windows 7 security vulnerabilities from the enterprise.",
       ' Created inventory tables and repaired equipment onsite, reducing downtime on most common failure points.',
     ],
   },
@@ -137,7 +138,7 @@ const experiences = [
     title: 'Systems Specialist',
     company_name: 'GEICO',
     iconBg: '#DCCEC5',
-    date: 'Dec 2019 - April 2021',
+    date: 'Dec 2019 - Apr 2021',
     points: [
       'Researched Content Management Systems (CMS), Accessibility Standards, and Mobile/Cross-browser Compatibility optimization used to improve the internal Geico IT website frontend impacting 60,000 agents.',
       " Engineered a Python script to generate precisely formatted email templates and establish file paths, streamlining the retrieval of phone recordings crucial for regional agents' access.",
@@ -145,9 +146,21 @@ const experiences = [
     ],
   },
   {
+    title: 'Frontend Developer',
+    company_name: 'Freelance',
+    iconBg: '#1a191d',
+    date: 'Apr 2021 - Nov 2021',
+    points: [
+      'Independently managed and executed frontend projects using HTML, CSS, and JavaScript to create dynamic and visually appealing web applications, demonstrating strong self-motivation and time management skills.',
+      'Innovated for clients by creating custom graphics, illustrations, and animations, ultimately enhancing the overall user experience as well as increasing traffic exponentially.',
+      'Collaborated with clients to understand their requirements and translate them into seamless user interfaces.',
+      'Developed 15+ interactive overlays using custom CSS to achieve clean and aesthetically pleasing UX/UI.',
+    ],
+  },
+  {
     title: 'Junior Web Developer',
     company_name: 'Kalo Technologies',
-    iconBg: '#1a191d',
+    iconBg: '#DCCEC5',
     date: 'Nov 2021 - May 2022',
     points: [
       'Collaborated with stakeholders to create static, dynamic, e-commerce, and portal web applications,',
@@ -160,7 +173,7 @@ const experiences = [
   {
     title: 'Frontend Developer',
     company_name: 'Finding Farmers',
-    iconBg: '#DCCEC5',
+    iconBg: '#1a191d',
     date: 'May 2022 - Jan 2023',
     points: [
       'Designed, developed, tested, and implemented responsive react web applications with modern frontend and backend frameworks, ensuring seamless integration, friendly user interfaces, and a consistent user experience.',
@@ -174,7 +187,7 @@ const experiences = [
     title: 'Manager',
     company_name: 'Kumon',
     // icon: kumon,
-    iconBg: '#1a191d',
+    iconBg: '#DCCEC5',
     date: 'Jan 2023 - Current',
     points: [
       'Analyzed the learning process to identify areas of improvement and spearheaded collaborative efforts to implement tailored solutions that aligned with stakeholder requirements and needs.',
@@ -237,6 +250,28 @@ const projects = [
   //   source_site_link: '#',
   // },
   {
+    name: 'HooBank',
+    description:
+      'Landing page for a modern banking app showcasing clean components and beautiful graphics based on Figma design.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: hoobk,
+    source_code_link: 'https://github.com/MGahelrasoul/Bank-App',
+    // source_site_link: '#',
+  },
+  {
     name: 'Threejs Project',
     description:
       'Interactive project showcasing the capabilities of Three.js in 3D modeling.',
@@ -282,7 +317,8 @@ const projects = [
     ],
     image: yelpcamp,
     source_code_link: 'https://github.com/MGahelrasoul/YelpCamp',
-    source_site_link: 'http://ec2-18-117-72-225.us-east-2.compute.amazonaws.com/YelpCamp',
+    source_site_link:
+      'http://ec2-18-117-72-225.us-east-2.compute.amazonaws.com/YelpCamp',
   },
   {
     name: 'Weather App',
@@ -346,12 +382,12 @@ const projects = [
     ],
     image: tetris,
     source_code_link: 'https://github.com/MGahelrasoul/Tetris',
-    source_site_link: 'http://ec2-18-117-72-225.us-east-2.compute.amazonaws.com/Tetris',
+    source_site_link:
+      'http://ec2-18-117-72-225.us-east-2.compute.amazonaws.com/Tetris',
   },
   {
     name: 'Blog',
-    description:
-      'A versatile CRUD app for effortless blog content management.',
+    description: 'A versatile CRUD app for effortless blog content management.',
     tags: [
       {
         name: 'bootstrap',

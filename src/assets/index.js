@@ -23,6 +23,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 
 import metaverse from "./metaverse.png";
+import hoobk from "./hoobk.png";
 import threejsp from "./threejsp.png";
 import yelpcamp from "./thumb_YelpCamp.jpg";
 import weather from "./thumb_WeatherApp.jpg";
@@ -56,6 +57,7 @@ export {
   typescript,
   threejs,
   metaverse,
+  hoobk,
   threejsp,
   yelpcamp,
   mapsapi,
