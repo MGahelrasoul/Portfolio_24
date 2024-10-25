@@ -1,4 +1,4 @@
-export const textVariant = (delay) => {
+export const textVariant = (delay = 0) => {
     return {
       hidden: {
         y: -50,
@@ -10,7 +10,7 @@ export const textVariant = (delay) => {
         transition: {
           type: "spring",
           duration: 1.25,
-          delay: delay,
+          delay,
         },
       },
     };
@@ -75,13 +75,13 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const staggerContainer = (staggerChildren, delayChildren) => {
+  export const staggerContainer = (staggerChildren = 0.1, delayChildren = 0) => {
     return {
       hidden: {},
       show: {
         transition: {
-          staggerChildren: staggerChildren,
-          delayChildren: delayChildren || 0,
+          staggerChildren,
+          delayChildren,
         },
       },
     };

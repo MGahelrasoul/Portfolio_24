@@ -15,7 +15,7 @@ const ServiceCard = ({ index, title, icon }) => {
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full orange-black-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
           options={{
@@ -40,18 +40,18 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Overview<span className='text-highlight'>.</span></h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a Web Developer with experience in Frontend / Backend web
-        development. I've developed and deployed multiple web applications, as
-        well as researched and analyzed stakeholder needs for website
-        functionality. Proficient in ReactJS, NodeJS and TypeScript, I have
-        hands-on experience creating responsive and visually appealing
+        Software Engineer with over 2 years of professional experience in Front
+        End / Back End Web Development. Passionate about creating user
+        experiences and invested in frontend development since completing a web
+        development bootcamp in 2019. Proficient in React, Node and TypeScript,
+        I have hands-on experience creating responsive and visually appealing
         interfaces with various frameworks and libraries.
       </motion.p>
 

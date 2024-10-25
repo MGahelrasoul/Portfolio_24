@@ -1,10 +1,6 @@
 import { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
-import {
-  PresentationControls,
-  Preload,
-  useGLTF,
-} from '@react-three/drei'
+import { PresentationControls, Preload, useGLTF } from '@react-three/drei'
 
 import CanvasLoader from '../Loader'
 
@@ -16,7 +12,7 @@ const Computers = ({ isMobile }) => {
     <mesh castShadow>
       <directionalLight intensity={0.5} color="#1B03A3" />
       <spotLight
-        position={isMobile ? [1.1, 0.15, -0.55] : [1.25, .25, -0.75]}
+        position={isMobile ? [1.1, 0.15, -0.55] : [1.25, 0.25, -0.75]}
         angle={1.571}
         penumbra={0.5}
         intensity={0.75}
@@ -62,7 +58,7 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       flat
-      frameloop={isMobile ? "demand" : "always"}
+      frameloop={isMobile ? 'demand' : 'always'}
       shadows
       camera={{ zoom: 1, position: [0, 0, 10], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}

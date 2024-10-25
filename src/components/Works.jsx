@@ -18,8 +18,10 @@ const ProjectCard = ({
   source_site_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-    className='sm:w-auto w-full'>
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      className="sm:w-auto w-full"
+    >
       <Tilt
         options={{
           max: 45,
@@ -82,7 +84,7 @@ const Works = () => {
   useEffect(() => {
     const preloadImages = async () => {
       await new Promise((resolve) => setTimeout(resolve, 200))
-      
+
       projects.forEach((project) => {
         const img = new Image()
         img.src = project.image
@@ -96,20 +98,20 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My works</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h2 className={styles.sectionHeadText}>Projects<span className='text-highlight'>.</span></h2>
       </motion.div>
 
       <div className="w-full flex">
-      <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
-        className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        The following projects showcase my skills and experience through
-        real-world examples of my work. Each project is briefly described with
-        links to code repositories and live demos. These reflect my ability to
-        solve complex problems, work with different technologies, and manage
-        projects effectively.
-      </motion.p>
+        <motion.p
+          variants={fadeIn('', '', 0.1, 1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          The following projects showcase my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to code repositories and live demos. These reflect my ability to
+          solve complex problems, work with different technologies, and manage
+          projects effectively.
+        </motion.p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">

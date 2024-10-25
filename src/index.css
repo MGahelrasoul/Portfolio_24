@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -25,45 +25,47 @@ body,
 }
 
 .bg-card-link {
-  background-color: #1a191d;
-  transition: .5s ease;
+  background-color: #1c1c1c;
+  transition: 0.5s ease;
 }
 .bg-card-link:hover {
-  background-color: #03071E;
+  background-color: #303030;
 }
 
-.bg-nav-mobile {
-  background-color: #1a191d;
+.vertical-timeline::before {
+  background: #303030;
+}
+.nav-hover::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 0%;
+  height: 0.25rem;
+  background: #f48c06;
+  border-radius: 5px;
+}
+.nav-hover:hover::after {
+  width: 100%;
+}
+.nav-hover:hover a {
+  background: #303030;
 }
 
-.black-gradient {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.violet-gradient {
-  background: #F48C06;
-  background: linear-gradient(-90deg, #F48C06 0%, rgba(60, 51, 80, 0) 100%);
+.orange-gradient {
+  background: #f48c06;
+  background: linear-gradient(-90deg, #f48c06 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #F48C06 0%,
+    #f48c06 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
 
-.green-pink-gradient {
-  background: "#03071E";
-  background: linear-gradient(90.13deg, #03071E 1.9%, #F48C06 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #03071E 1.9%, #F48C06 97.5%);
+.orange-black-gradient {
+  background: '#050505';
+  background: linear-gradient(90.13deg, #050505 1.9%, #f48c06 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #050505 1.9%, #f48c06 97.5%);
 }
 
 .orange-text-gradient {

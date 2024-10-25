@@ -13,10 +13,10 @@ import { textVariant } from '../utils/motion'
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#1d1836', color: '#FFBA08' }}
+    contentStyle={{ background: '#0e0e0e', color: '#F48C06', boxShadow: "0 3px 0 #303030" }}
     contentArrowStyle={{ borderRight: '7px solid #F48C06' }}
     date={experience.date}
-    iconStyle={{ background: experience.iconBg }}
+    iconStyle={{ background: experience.iconBg, boxShadow: '0 0 0 4px #303030,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05)' }}
     icon={
       <div className="flex justify-center items-center w-full h-full">
         {/* <img
@@ -29,16 +29,16 @@ const ExperienceCard = ({ experience }) => (
   >
     <div>
       <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-      <p className="text-decondary text-[16px] font-semibold">
+      <p className="text-highlight text-[16px] font-semibold">
         {experience.company_name}
       </p>
     </div>
 
-    <ul className="mt-5 list-disc ml-5 space-y-2">
+    <ul className="mt-5 list-none space-y-2">
       {experience.points.map((point, index) => (
         <li
           key={`experience-point-${index}`}
-          className="text-white-100 text-[14px] pl-1 tracking-wider"
+          className="text-white-txt text-[14px] px-3 py-1 tracking-wider"
         >
           {point}
         </li>
@@ -52,7 +52,7 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <h2 className={styles.sectionHeadText}>Work Experience<span className='text-highlight'>.</span></h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

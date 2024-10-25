@@ -14,7 +14,7 @@ import {
   mongodb,
   git,
   figma,
-  // docker,
+  docker,
   metaverse,
   hoobk,
   threejsp,
@@ -49,19 +49,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'Software Engineer',
     icon: web,
   },
   {
-    title: 'ReactJS Frontend',
+    title: 'React JS FrontEnd',
     icon: mobile,
   },
   {
-    title: 'NodeJS Backend',
+    title: 'Node JS BackEnd',
     icon: backend,
   },
   {
-    title: 'UX/UI Design',
+    title: 'UX/UI Development',
     icon: creator,
   },
 ]
@@ -115,23 +115,74 @@ const technologies = [
     name: 'figma',
     icon: figma,
   },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
+  {
+    name: 'docker',
+    icon: docker,
+  },
 ]
 
 const experiences = [
   {
-    title: 'Systems Technician',
-    company_name: 'TalentPro Inc',
-    iconBg: '#1a191d',
-    date: 'Feb 2019 - Dec 2019',
+    title: 'Front End Software Engineer',
+    company_name: 'Invincible GG',
+    iconBg: '#1c1c1c',
+    date: 'Feb 2024 - Current',
     points: [
-      'Diagnosed and troubleshot software, hardware, and network; researched, analyzed, and rectified technical problems, reducing call resolution to 5 minutes or less, with 93% of calls resolved on first contact.',
-      ' Generated Tier 1 troubleshooting protocols and delivered training sessions for Tier 1 techs, increasing department first call resolution by 12% and decreasing call resolution time to below 10 minutes per incident.',
-      " Led imaging and configuration of over 6000 AD adjusters' computers to Windows 10, eradicating Windows 7 security vulnerabilities from the enterprise.",
-      ' Created inventory tables and repaired equipment onsite, reducing downtime on most common failure points.',
+      'Developed and managed an e-commerce web app using React and Redux for over 15,000 users, enhancingperformance and user engagement across various devices and browsers.',
+      'Implemented dozens of new features and design enhancements, improving site responsiveness and UX.',
+      'Created an admin dashboard, including CMS tools that enabled designers to apply promotions, news articles, and other content directly to the storefront and reduce update time by 50%.',
+      'Integrated advanced user activity tracking via Matomo, boosting user retention through data-driven insights.',
+      'Built and maintained RESTful APIs and automation scripts with Node and Express, enhancing backend efficiency.',
+      'Optimized performance, leading to improvement in page load times and overall application efficiency.',
+    ],
+  },
+  {
+    title: 'Manager',
+    company_name: 'Kumon Institute Education',
+    iconBg: '#DCCEC5',
+    date: 'Jan 2023 - Feb 2024',
+    points: [
+      'Led a team of 11 instructors to deliver personalized educational services efficiently.',
+      'Analyzed learning process to identify areas for improvement, resulting in a 10% increase in assessment scores.',
+      'Maintained a student information database, enabling data-driven lessons, and assessments.',
+      'Introduced online learning through a mobile app, reducing planning and grading time by several hours per week.',
+    ],
+  },
+  {
+    title: 'Full Stack Software Engineer',
+    company_name: 'Finding Farmers',
+    iconBg: '#1c1c1c',
+    date: 'May 2022 - Jan 2023',
+    points: [
+      'Designed, developed, and implemented responsive web applications using React and modern frameworks.',
+      'Utilized React for templating, accelerating development through reusable components.',
+      "Integrated Google Cloud's Geocoding and Maps JavaScript APIs, enhancing user interaction and increasing website traffic by 25%.",
+      'Provided clear directives in Software Requirements Specifications (SRS), improving team workflow.',
+      'Executed SQL queries to analyze data and formulate solutions to drive user activity.',
+    ],
+  },
+  {
+    title: 'Junior Full Stack Software Engineer',
+    company_name: 'Kalo Technologies',
+    iconBg: '#DCCEC5',
+    date: 'Nov 2021 - May 2022',
+    points: [
+      'Collaborated with stakeholders to create static, dynamic, and e-commerce web applications using HTML, CSS, JavaScript, and various frontend frameworks.',
+      'Developed innovative solutions tailored to stakeholder needs, resulting in a 12% surge in user engagement.',
+      'Optimized client-side performance, reducing response times by roughly 1 second and decreasing server load.',
+      'Coordinated with design teams to ensure clean and functional website aesthetics.',
+    ],
+  },
+  {
+    title: 'Front End Software Engineer',
+    company_name: 'Freelance',
+    iconBg: '#1c1c1c',
+    date: 'Apr 2021 - Nov 2021',
+    points: [
+      'Managed and executed frontend projects using HTML, CSS, and JavaScript to create dynamic and visually appealing web applications, widgets, and plugins.',
+      'Enhanced user experience by creating custom graphics, illustrations, and animations.',
+      'Developed 15+ interactive overlays using custom CSS for improved UX/UI.',
+      'Collaborated with clients to understand requirements and deliver seamless user interfaces.',
     ],
   },
   {
@@ -140,122 +191,33 @@ const experiences = [
     iconBg: '#DCCEC5',
     date: 'Dec 2019 - Apr 2021',
     points: [
-      'Researched Content Management Systems (CMS), Accessibility Standards, and Mobile/Cross-browser Compatibility optimization used to improve the internal Geico IT website frontend impacting 60,000 agents.',
-      " Engineered a Python script to generate precisely formatted email templates and establish file paths, streamlining the retrieval of phone recordings crucial for regional agents' access.",
-      ' Crafted system to structure customer data, improving call resolution by 2 minutes across 600 daily support calls.',
+      'Mentored under a Web Developer III, gaining foundational skills in frontend development.',
+      'Researched Content Management Systems (CMS), accessibility standards, and cross-browser compatibility to improve GEICO’s internal IT website used by over 60,000 agents.',
+      'Developed a Python script to generate formatted email templates and establish file paths, streamlining retrieval of phone recordings for regional agents.',
+      'Improved customer data structuring, reducing call resolution time by 2 minutes across 600 daily support calls.',
     ],
   },
   {
-    title: 'Frontend Developer',
-    company_name: 'Freelance',
-    iconBg: '#1a191d',
-    date: 'Apr 2021 - Nov 2021',
+    title: 'Systems Technician',
+    company_name: 'TalentPro Inc.',
+    iconBg: '#1c1c1c',
+    date: 'Feb 2019 - Dec 2019',
     points: [
-      'Independently managed and executed frontend projects using HTML, CSS, and JavaScript to create dynamic and visually appealing web applications, demonstrating strong self-motivation and time management skills.',
-      'Innovated for clients by creating custom graphics, illustrations, and animations, ultimately enhancing the overall user experience as well as increasing traffic exponentially.',
-      'Collaborated with clients to understand their requirements and translate them into seamless user interfaces.',
-      'Developed 15+ interactive overlays using custom CSS to achieve clean and aesthetically pleasing UX/UI.',
+      'Diagnosed and resolved software, hardware, and network issues, achieving 93% first-contact resolution rate.',
+      'Created Tier 1 troubleshooting protocols and conducted training sessions, increasing department efficiency.',
+      'Led project to image and configure over 6000 computers to Windows 10, eliminating security vulnerabilities.',
     ],
-  },
-  {
-    title: 'Junior Web Developer',
-    company_name: 'Kalo Technologies',
-    iconBg: '#DCCEC5',
-    date: 'Nov 2021 - May 2022',
-    points: [
-      'Collaborated with stakeholders to create static, dynamic, e-commerce, and portal web applications,',
-      ' demonstrating proficiency in HTML, CSS, JavaScript, and various frontend frameworks/packages.',
-      ' Translated stakeholder needs into innovative website functionalities, offering tailored solutions that resulted in an impressive 12% surge in user activity and website engagement.',
-      ' Improved response time on the client side by roughly 1 second while decreasing server load.',
-      ' Coordinated with the Graphics Design team for aesthetics, resulting in clean website functionality and design.',
-    ],
-  },
-  {
-    title: 'Frontend Developer',
-    company_name: 'Finding Farmers',
-    iconBg: '#1a191d',
-    date: 'May 2022 - Jan 2023',
-    points: [
-      'Designed, developed, tested, and implemented responsive react web applications with modern frontend and backend frameworks, ensuring seamless integration, friendly user interfaces, and a consistent user experience.',
-      ' Utilized React JS for templating, resulting in faster compilation and development of reusable components.',
-      " Leveraged Ajax functions to successfully integrate Google Cloud's Geocoding and Maps JavaScript APIs, a pivotal feature enhancing user interaction and engagement, ultimately increasing website traffic.",
-      ' Provided clear directives on objectives, functionalities, and constraints in an SRS, improving the team workflow.',
-      ' Pulled SQL queries on stakeholder requests and analyzed data to formulate solutions for driving user activity.',
-    ],
-  },
-  {
-    title: 'Manager',
-    company_name: 'Kumon',
-    // icon: kumon,
-    iconBg: '#DCCEC5',
-    date: 'Jan 2023 - Current',
-    points: [
-      'Analyzed the learning process to identify areas of improvement and spearheaded collaborative efforts to implement tailored solutions that aligned with stakeholder requirements and needs.',
-      'Led a team of 11 instructors to organize concepts, optimize schedules, and deliver services efficiently.',
-      'Crafted personalized lesson plans tailored to individual needs, resulting in a 10% increase in assessment scores.',
-      'Maintained a student information database, enabling data-driven lessons, assessments, and instruction.',
-      'Provided insight towards implementing online learning through a mobile app, ultimately reducing planning/grading time by a couple of hours per week.',
-    ],
-  },
-]
-
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Moe proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
 ]
 
 const projects = [
-  // {
-  //   name: 'Metaverse Madness',
-  //   description:
-  //     'Comprehensive product site exploring the metaverse with a curated selection of products.',
-  //   tags: [
-  //     {
-  //       name: 'react',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'node',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'tailwind',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: metaverse,
-  //   source_code_link: '#',
-  //   source_site_link: '#',
-  // },
   {
-    name: 'HooBank',
+    name: 'Banking Dashboard',
     description:
-      'Landing page for a modern banking app showcasing clean components and beautiful graphics based on Figma design.',
+      'A finance management dashboard that allows users to connect bank accounts, display transactions, and transfers funds.',
     tags: [
       {
-        name: 'react',
+        name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
@@ -267,9 +229,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: hoobk,
-    source_code_link: 'https://github.com/MGahelrasoul/Bank-App',
-    source_site_link: 'https://hoobk.tech',
+    image: null,
+    source_code_link: 'https://github.com/MGahelrasoul/banking-dashboard',
+    // source_site_link: 'https://threejs-project.tech/',
   },
   {
     name: 'Threejs Project',
@@ -292,6 +254,50 @@ const projects = [
     image: threejsp,
     source_code_link: 'https://github.com/MGahelrasoul/threejs-project',
     source_site_link: 'https://threejs-project.tech/',
+  },
+  {
+    name: 'Metaverse Madness',
+    description:
+      'Comprehensive product site exploring the metaverse with a curated selection of products.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'node',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: metaverse,
+    source_code_link: 'https://github.com/MGahelrasoul/Metaversus',
+    source_site_link: 'https://metaverse-madness.tech',
+  },
+  {
+    name: 'Bank App',
+    description:
+      'Landing page for a modern banking app showcasing clean components and beautiful graphics based on Figma design.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: hoobk,
+    source_code_link: 'https://github.com/MGahelrasoul/Bank-App',
+    source_site_link: 'https://hoobk.tech',
   },
   {
     name: 'Yelp Camp',
@@ -317,8 +323,8 @@ const projects = [
     ],
     image: yelpcamp,
     source_code_link: 'https://github.com/MGahelrasoul/YelpCamp',
-    source_site_link:
-      'http://ec2-18-117-72-225.us-east-2.compute.amazonaws.com/YelpCamp',
+    // source_site_link:
+    //   'http://ec2-18-117-72-225.us-east-2.compute.amazonaws.com/YelpCamp',
   },
   {
     name: 'Weather App',
@@ -382,8 +388,8 @@ const projects = [
     ],
     image: tetris,
     source_code_link: 'https://github.com/MGahelrasoul/Tetris',
-    source_site_link:
-      'http://ec2-18-117-72-225.us-east-2.compute.amazonaws.com/Tetris',
+    // source_site_link:
+    //   'http://ec2-18-117-72-225.us-east-2.compute.amazonaws.com/Tetris',
   },
   {
     name: 'Blog',
@@ -453,4 +459,4 @@ const projects = [
   },
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+export { services, technologies, experiences, projects }
