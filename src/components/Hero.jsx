@@ -54,7 +54,7 @@ const Hero = () => {
             <p className={`${styles.sectionSubText} mb-4`}>Software Engineer</p>
 
             <h1 className={`${styles.heroHeadText}`}>
-              Hey I'm
+              <p className={`${styles.sectionHeadText}`}>Hey! I'm</p>
               {renderHoverText(
                 firstName,
                 'text-[#FFBA08] block leading-none mt-2'
@@ -66,11 +66,11 @@ const Hero = () => {
             </h1>
             <p className={`${styles.heroSubText} mt-6 text-white-txt`}>
               I develop interactive user interfaces and web applications. In my
-              free time I persue creative endeavors such as digital art, game
+              free time I pursue creative endeavors such as digital art, game
               development, and content creation.
             </p>
           </div>
-          <div className="bg-black p-12 rounded-full border-highlight border-4 m-auto">
+          <div className="bg-primary p-12 rounded-full border-highlight border-4 m-auto">
             <img
               src={site}
               alt="profile"

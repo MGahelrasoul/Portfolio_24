@@ -40,7 +40,9 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview<span className='text-highlight'>.</span></h2>
+        <h2 className={styles.sectionHeadText}>
+          Overview<span className="text-highlight">.</span>
+        </h2>
       </motion.div>
 
       <motion.p
@@ -51,7 +53,7 @@ const About = () => {
         End / Back End Web Development. Passionate about creating user
         experiences and invested in frontend development since completing a web
         development bootcamp in 2019. Proficient in React, Node and TypeScript,
-        I have hands-on experience creating responsive and visually appealing
+        and hands-on experience creating responsive and visually appealing
         interfaces with various frameworks and libraries.
       </motion.p>
 

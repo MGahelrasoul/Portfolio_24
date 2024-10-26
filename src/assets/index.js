@@ -22,6 +22,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 
+import bk_dashboard from "./bk_dashboard.png";
 import metaverse from "./metaverse.png";
 import hoobk from "./hoobk.png";
 import threejsp from "./threejsp.png";
@@ -65,5 +66,6 @@ export {
   altgallery,
   weather,
   blog,
-  tetris
+  tetris,
+  bk_dashboard,
 };

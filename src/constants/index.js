@@ -26,6 +26,7 @@ import {
   blog,
   tetris,
   threejs,
+  bk_dashboard,
 } from '../assets'
 
 export const navLinks = [
@@ -229,9 +230,8 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: null,
-    source_code_link: 'https://github.com/MGahelrasoul/banking-dashboard',
-    // source_site_link: 'https://threejs-project.tech/',
+    image: bk_dashboard,
+    source_code_link: 'https://github.com/MGahelrasoul/Banking-Dashboard',
   },
   {
     name: 'Threejs Project',
