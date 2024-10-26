@@ -30,7 +30,7 @@ const Ball = (props) => {
           rotation={[2 * Math.PI, 0, 6.25]}
           scale={1}
           map={decal}
-          flatshading
+          flatShading
         />
       </mesh>
     </Float>
@@ -41,7 +41,7 @@ const BallCanvas = ({ icon }) => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 640px)')
+    const mediaQuery = window.matchMedia('(max-width: 40rem)')
 
     setIsMobile(mediaQuery.matches)
 
@@ -58,7 +58,7 @@ const BallCanvas = ({ icon }) => {
 
   return (
     <Canvas
-      frameloop={isMobile ? "demand" : "always"}
+      frameloop={isMobile ? 'demand' : 'always'}
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >

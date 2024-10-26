@@ -40,7 +40,7 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 640px)')
+    const mediaQuery = window.matchMedia('(max-width: 40rem)')
 
     setIsMobile(mediaQuery.matches)
 

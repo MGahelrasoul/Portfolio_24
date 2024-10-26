@@ -24,7 +24,7 @@ module.exports = {
         'sub-txt': '#DCCEC5',
       },
       boxShadow: {
-        card: '0px 35px 120px -15px #352a1e',
+        card: '0px 35px 60px -30px rgba(244, 140, 6, 0.25)',
       },
       screens: {
         xs: '450px',

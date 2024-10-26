@@ -23,7 +23,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-[18px] font-bold cursor-pointer flex">
+          <p className="text-[1.125rem] font-bold cursor-pointer flex">
             Gahelrasoul&nbsp;
             <span className="">| Front End</span>
           </p>
@@ -34,7 +34,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? 'text-highlight' : 'text-secondary'
-              } nav-hover relative hover:text-white py-5 text-[18px] font-medium cursor-pointer`}
+              } nav-hover relative hover:text-white py-5 text-[1.125rem] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a className="px-4 py-1 rounded-lg" href={`#${link.id}`}>
@@ -50,14 +50,14 @@ const Navbar = () => {
             alt="menu"
             className={`${
               !toggle ? '' : 'mt-6'
-            } w-[28px] h-[28px] object-contain cursor-pointer`}
+            } w-[1.875rem] h-[1.875rem] object-contain cursor-pointer`}
             onClick={() => setToggle(!toggle)}
           />
 
           <div
             className={`${
               !toggle ? 'hidden' : 'flex'
-            } p-6 pt-0 bg-nav-mobile top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}
+            } p-6 pt-0 top-20 right-0 mx-4 my-2 z-10 rounded-xl`}
           >
             <ul className="list-none flex items-center flex-col gap-4">
               {navLinks.map((link) => (
@@ -65,7 +65,7 @@ const Navbar = () => {
                   key={link.id}
                   className={`${
                     active === link.title ? 'text-highlight' : 'text-secondary'
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                  } font-poppins font-medium cursor-pointer text-[1rem]`}
                   onClick={() => {
                     setToggle(!toggle)
                     setActive(link.title)
