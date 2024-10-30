@@ -7,6 +7,7 @@ import github from "./github.png";
 import site from "./site.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import profile from "./profile.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -68,4 +69,5 @@ export {
   blog,
   tetris,
   bk_dashboard,
+  profile,
 };

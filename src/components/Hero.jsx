@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import StarsCanvas from './canvas/Stars'
 import { letterVariants } from '../utils/motion'
-import { site } from '../assets'
+import { profile, site } from '../assets'
 
 const Hero = () => {
   const firstName = 'Mohammed'
@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 orange-gradient" />
         </div>
 
-        <div className="flex justify-between items-center flex-row w-full">
+        <div className="flex justify-between items-center lg:flex-row flex-col gap-8 pr-8 w-full">
           <div className="max-w-xl lg:max-w-3xl">
             <p className={`${styles.sectionSubText} mb-4`}>Software Engineer</p>
 
@@ -70,11 +70,12 @@ const Hero = () => {
               development, and content creation.
             </p>
           </div>
-          <div className="bg-primary p-12 rounded-full border-highlight border-4 m-auto">
+          <div className="bg-primary overflow-hidden rounded-full border-highlight border-4 m-auto">
             <img
-              src={site}
+              // src={site}
+              src={profile}
               alt="profile"
-              className="max-w-[10rem] w-full h-auto"
+              className="max-w-[20rem] w-full h-auto"
             />
           </div>
         </div>
