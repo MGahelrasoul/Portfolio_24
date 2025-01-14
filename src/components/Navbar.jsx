@@ -23,7 +23,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-[1.125rem] font-bold cursor-pointer flex">
+          <p className="text-[1.125rem] font-bold cursor-pointer flex flex-wrap">
             Gahelrasoul&nbsp;
             <span className="">| Front End</span>
           </p>

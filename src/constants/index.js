@@ -129,8 +129,8 @@ const experiences = [
     iconBg: '#1c1c1c',
     date: 'Feb 2024 - Current',
     points: [
-      'Developed and managed an e-commerce web app using React and Redux for over 15,000 users, enhancingperformance and user engagement across various devices and browsers.',
-      'Implemented dozens of new features and design enhancements, improving site responsiveness and UX.',
+      'Developed and managed an e-commerce web app using React and Redux for over 15,000 users, enhancing performance and user engagement across various devices and browsers.',
+      'Led the implementation of dozens of new features and design enhancements, including a design overhaul redefining our online presence through improved site responsiveness and UX.',
       'Created an admin dashboard, including CMS tools that enabled designers to apply promotions, news articles, and other content directly to the storefront and reduce update time by 50%.',
       'Integrated advanced user activity tracking via Matomo, boosting user retention through data-driven insights.',
       'Built and maintained RESTful APIs and automation scripts with Node and Express, enhancing backend efficiency.',
@@ -155,9 +155,8 @@ const experiences = [
     iconBg: '#1c1c1c',
     date: 'May 2022 - Jan 2023',
     points: [
-      'Designed, developed, and implemented responsive web applications using React and modern frameworks.',
-      'Utilized React for templating, accelerating development through reusable components.',
-      "Integrated Google Cloud's Geocoding and Maps JavaScript APIs, enhancing user interaction and increasing website traffic by 25%.",
+      'Designed, developed, and implemented responsive web applications using React for templating, accelerating development through reusable components, and TypeScript to define consistent interfaces for integrating APIs.',
+      'Integrated Google Cloud\'s Geocoding and Maps JavaScript APIs, enhancing user interaction and increasing website traffic by 25%.',
       'Provided clear directives in Software Requirements Specifications (SRS), improving team workflow.',
       'Executed SQL queries to analyze data and formulate solutions to drive user activity.',
     ],
@@ -168,10 +167,10 @@ const experiences = [
     iconBg: '#DCCEC5',
     date: 'Nov 2021 - May 2022',
     points: [
-      'Collaborated with stakeholders to create static, dynamic, and e-commerce web applications using HTML, CSS, JavaScript, and various frontend frameworks.',
-      'Developed innovative solutions tailored to stakeholder needs, resulting in a 12% surge in user engagement.',
+      'Collaborated with stakeholders to create static, dynamic, and e-commerce web applications using TypeScript, HTML, CSS, JavaScript, and various frontend frameworks.',
+      'Leveraged TypeScript for strict type definitions, reducing potential integration issues during development.',
       'Optimized client-side performance, reducing response times by roughly 1 second and decreasing server load.',
-      'Coordinated with design teams to ensure clean and functional website aesthetics.',
+      'Coordinated with design teams to ensure clean and functional website aesthetics, tailored to stakeholder needs.',
     ],
   },
   {
@@ -180,7 +179,7 @@ const experiences = [
     iconBg: '#1c1c1c',
     date: 'Apr 2021 - Nov 2021',
     points: [
-      'Managed and executed frontend projects using HTML, CSS, and JavaScript to create dynamic and visually appealing web applications, widgets, and plugins.',
+      'Managed and executed frontend projects using TypeScript, HTML, CSS, and JavaScript to create dynamic and visually appealing web applications, widgets, and plugins.',
       'Enhanced user experience by creating custom graphics, illustrations, and animations.',
       'Developed 15+ interactive overlays using custom CSS for improved UX/UI.',
       'Collaborated with clients to understand requirements and deliver seamless user interfaces.',
