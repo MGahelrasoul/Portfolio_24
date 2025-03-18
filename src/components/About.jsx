@@ -7,8 +7,6 @@ import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 
-console.log(services)
-
 // functional comp
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -49,7 +47,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[1.125rem] max-w-3xl leading-[1.875rem]"
       >
-        Software Engineer with over 2 years of professional experience in Front
+        Software Engineer with 3 years of professional experience in Front
         End / Back End Web Development. Passionate about creating user
         experiences and invested in frontend development since completing a web
         development bootcamp in 2019. Proficient in React, Node and TypeScript,
