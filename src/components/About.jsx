@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[1.125rem] max-w-3xl leading-[1.875rem]"
       >
-        Software Engineer with 2.5+ years of professional experience in Front
+        Software Engineer with 3+ years of professional experience in Front
         End / Back End Web Development. Passionate about creating user
         experiences and invested in frontend development since completing a web
         development bootcamp in 2019. Proficient in React, Node and TypeScript,
