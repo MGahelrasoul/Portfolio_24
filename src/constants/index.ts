@@ -150,7 +150,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Software Engineer',
+    title: 'Front End Engineer',
     company_name: 'Finding Farmers',
     iconBg: '#1c1c1c',
     date: 'May 2022 - Jan 2023',
@@ -162,7 +162,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Junior Full Stack Software Engineer',
+    title: 'Front End Developer',
     company_name: 'Kalo Technologies',
     iconBg: '#DCCEC5',
     date: 'Nov 2021 - May 2022',
@@ -174,8 +174,8 @@ const experiences = [
     ],
   },
   {
-    title: 'Front End Software Engineer',
-    company_name: 'Freelance',
+    title: 'Freelance Developer',
+    company_name: 'Self-Employed',
     iconBg: '#1c1c1c',
     date: 'Apr 2021 - Nov 2021',
     points: [
