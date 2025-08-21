@@ -1,4 +1,7 @@
-import React, { Suspense, useEffect, useState } from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
+
+import { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {
   Decal,
@@ -8,7 +11,7 @@ import {
   useTexture,
 } from '@react-three/drei'
 
-import CanvasLoader from '../Loader'
+import CanvasLoader from '../ui/Loader'
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl])
