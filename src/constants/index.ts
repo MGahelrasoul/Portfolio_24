@@ -1,33 +1,32 @@
-const backend = "/assets/backend.png";
-const creator = "/assets/creator.png";
-const mobile = "/assets/mobile.png";
-const web = "/assets/web.png";
+const backend = '/assets/backend.png'
+const creator = '/assets/creator.png'
+const mobile = '/assets/mobile.png'
+const web = '/assets/web.png'
 
-const css = "/assets/tech/css.png";
-const docker = "/assets/tech/docker.png";
-const figma = "/assets/tech/figma.png";
-const git = "/assets/tech/git.png";
-const html = "/assets/tech/html.png";
-const javascript = "/assets/tech/javascript.png";
-const mongodb = "/assets/tech/mongodb.png";
-const nodejs = "/assets/tech/nodejs.png";
-const reactjs = "/assets/tech/reactjs.png";
-const redux = "/assets/tech/redux.png";
-const tailwind = "/assets/tech/tailwind.png";
-const typescript = "/assets/tech/typescript.png";
-const threejs = "/assets/tech/threejs.png";
+const css = '/assets/tech/css.png'
+const docker = '/assets/tech/docker.png'
+const figma = '/assets/tech/figma.png'
+const git = '/assets/tech/git.png'
+const html = '/assets/tech/html.png'
+const javascript = '/assets/tech/javascript.png'
+const mongodb = '/assets/tech/mongodb.png'
+const nodejs = '/assets/tech/nodejs.png'
+const reactjs = '/assets/tech/reactjs.png'
+const redux = '/assets/tech/redux.png'
+const tailwind = '/assets/tech/tailwind.png'
+const typescript = '/assets/tech/typescript.png'
 
-const bk_dashboard = "/assets/bk_dashboard.png";
-const metaverse = "/assets/metaverse.png";
-const hoobk = "/assets/hoobk.png";
-const threejsp = "/assets/threejsp.png";
-const yelpcamp = "/assets/thumb_YelpCamp.jpg";
-const weather = "/assets/thumb_WeatherApp.jpg";
-const mapsapi = "/assets/thumb_MapsApi.jpg";
-const gallery = "/assets/thumb_Gallery.jpg";
-const altgallery = "/assets/thumb_Taste.jpg";
-const blog = "/assets/thumb_TechBlog.jpg";
-const tetris = "/assets/thumb_Tetris.jpg";
+const bk_dashboard = '/assets/bk_dashboard.png'
+const metaverse = '/assets/metaverse.png'
+const hoobk = '/assets/hoobk.png'
+const threejsp = '/assets/threejsp.png'
+const yelpcamp = '/assets/thumb_YelpCamp.jpg'
+const weather = '/assets/thumb_WeatherApp.jpg'
+const mapsapi = '/assets/thumb_MapsApi.jpg'
+const gallery = '/assets/thumb_Gallery.jpg'
+const altgallery = '/assets/thumb_Taste.jpg'
+const blog = '/assets/thumb_TechBlog.jpg'
+const tetris = '/assets/thumb_Tetris.jpg'
 
 export const navLinks = [
   {
@@ -105,10 +104,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
     name: 'git',
     icon: git,
   },
@@ -124,17 +119,28 @@ const technologies = [
 
 const experiences = [
   {
+    title: 'Founder / Front End Engineer',
+    company_name: 'Self-Employed',
+    iconBg: '#1c1c1c',
+    date: 'Mar 2025 - Present',
+    points: [
+      'Built a React Native (Expo) mobile app backed by FastAPI and Postgres, featuring real-time chat, media uploads, and offline caching.',
+      'Designed and maintained CI/CD pipelines with error tracking and release analytics to monitor client stability and adoption.',
+      'Focused on scalable UI patterns and resilient front-end architecture to support rapid iteration and feature delivery.',
+      'Wireframed, documented, and designed systems on the frontend and backend, prioritizing user experience.',
+    ],
+  },
+  {
     title: 'Front End Software Engineer',
     company_name: 'Invincible GG',
     iconBg: '#1c1c1c',
     date: 'Feb 2024 - Feb 2025',
     points: [
-      'Developed and managed an e-commerce web app using React and Redux for over 15,000 users, enhancing performance and user engagement across various devices and browsers.',
-      'Led the implementation of dozens of new features and design enhancements, including a design overhaul redefining our online presence through improved site responsiveness and UX.',
-      'Created an admin dashboard, including CMS tools that enabled designers to apply promotions, news articles, and other content directly to the storefront and reduce update time by 50%.',
-      'Integrated advanced user activity tracking via Matomo, boosting user retention through data-driven insights.',
-      'Built and maintained RESTful APIs and automation scripts with Node and Express, enhancing backend efficiency.',
-      'Optimized performance, leading to improvement in page load times and overall application efficiency.',
+      'Shipped high-performance React/Redux features for an e-commerce platform serving 15k+ users.',
+      'Boosted conversion rates 18% through responsive design overhaul and mobile-first implementation.',
+      'Reduced content update latency by 50% via custom CMS dashboard implementation.',
+      'Drove a 40% improvement in load performance through bundle optimization and lazy loading.',
+      'Integrated event telemetry (Matomo) to guide retention-focused product decisions.',
     ],
   },
   {
@@ -143,10 +149,9 @@ const experiences = [
     iconBg: '#DCCEC5',
     date: 'Jan 2023 - Feb 2024',
     points: [
-      'Led a team of 11 instructors to deliver personalized educational services efficiently.',
+      'Led a team of 11 instructors while maintaining technical skills through independent React projects.',
       'Analyzed learning process to identify areas for improvement, resulting in a 10% increase in assessment scores.',
-      'Maintained a student information database, enabling data-driven lessons, and assessments.',
-      'Introduced online learning through a mobile app, reducing planning and grading time by several hours per week.',
+      'Introduced online learning through a mobile app, reducing planning and grading time by 6+ hours per week.',
     ],
   },
   {
@@ -155,10 +160,9 @@ const experiences = [
     iconBg: '#1c1c1c',
     date: 'May 2022 - Jan 2023',
     points: [
-      'Designed, developed, and implemented responsive web applications using React for templating, accelerating development through reusable components, and TypeScript to define consistent interfaces for integrating APIs.',
-      'Integrated Google Cloud\'s Geocoding and Maps JavaScript APIs, enhancing user interaction and increasing website traffic by 25%.',
-      'Provided clear directives in Software Requirements Specifications (SRS), improving team workflow.',
-      'Executed SQL queries to analyze data and formulate solutions to drive user activity.',
+      'Increased user engagement 25% by integrating Google Maps API with React-Query for data caching.',
+      'Migrated legacy JavaScript codebase to TypeScript, reducing production bugs by 30%.',
+      'Designed reusable React components library adopted across 3 product teams.',
     ],
   },
   {
@@ -167,9 +171,8 @@ const experiences = [
     iconBg: '#DCCEC5',
     date: 'Nov 2021 - May 2022',
     points: [
-      'Collaborated with stakeholders to create static, dynamic, and e-commerce web applications using TypeScript, HTML, CSS, JavaScript, and various frontend frameworks.',
-      'Leveraged TypeScript for strict type definitions, reducing potential integration issues during development.',
-      'Optimized client-side performance, reducing response times by roughly 1 second and decreasing server load.',
+      'Optimized React component performance, reducing average FCP from 2.1s to 1.3s through memoization.',
+      'Implemented atomic design system increasing UI development speed by 25%.',
       'Coordinated with design teams to ensure clean and functional website aesthetics, tailored to stakeholder needs.',
     ],
   },
@@ -179,33 +182,18 @@ const experiences = [
     iconBg: '#1c1c1c',
     date: 'Apr 2021 - Nov 2021',
     points: [
-      'Managed and executed frontend projects using TypeScript, HTML, CSS, and JavaScript to create dynamic and visually appealing web applications, widgets, and plugins.',
-      'Enhanced user experience by creating custom graphics, illustrations, and animations.',
-      'Developed 15+ interactive overlays using custom CSS for improved UX/UI.',
-      'Collaborated with clients to understand requirements and deliver seamless user interfaces.',
+      'Delivered 15+ React web apps, widgets, and plugins with custom CSS animations and interactive overlays.',
+      'Partnered with clients to translate business goals into technical specs, delivering user-centric interfaces that reduced client revision cycles by 40% through iterative feedback workshops.',
     ],
   },
   {
-    title: 'Systems Specialist',
+    title: 'Systems & Operations',
     company_name: 'GEICO',
-    iconBg: '#DCCEC5',
-    date: 'Dec 2019 - Apr 2021',
-    points: [
-      'Mentored under a Web Developer III, gaining foundational skills in frontend development.',
-      'Researched Content Management Systems (CMS), accessibility standards, and cross-browser compatibility to improve GEICO’s internal IT website used by over 60,000 agents.',
-      'Developed a Python script to generate formatted email templates and establish file paths, streamlining retrieval of phone recordings for regional agents.',
-      'Improved customer data structuring, reducing call resolution time by 2 minutes across 600 daily support calls.',
-    ],
-  },
-  {
-    title: 'Systems Technician',
-    company_name: 'TalentPro Inc.',
     iconBg: '#1c1c1c',
-    date: 'Feb 2019 - Dec 2019',
+    date: 'Feb 2019 - Apr 2021',
     points: [
-      'Diagnosed and resolved software, hardware, and network issues, achieving 93% first-contact resolution rate.',
-      'Created Tier 1 troubleshooting protocols and conducted training sessions, increasing department efficiency.',
-      'Led project to image and configure over 6000 computers to Windows 10, eliminating security vulnerabilities.',
+      'Improved internal CMS processes used by 60k+ agents, reducing average call resolution by 2 minutes; achieved 93% first-contact resolution for technical incidents.',
+      'Led imaging/configuration for 6k+ machines to migrate to Windows 10, reducing known security vulnerabilities.',
     ],
   },
 ]
@@ -213,8 +201,7 @@ const experiences = [
 const projects = [
   {
     name: 'Banking Dashboard',
-    description:
-      'A finance management dashboard that allows users to connect bank accounts, display transactions, and transfers funds.',
+    description: 'A finance management dashboard that allows users to connect bank accounts, display transactions, and transfers funds.',
     tags: [
       {
         name: 'nextjs',
@@ -234,8 +221,7 @@ const projects = [
   },
   {
     name: 'Threejs Project',
-    description:
-      'Interactive project showcasing the capabilities of Three.js in 3D modeling.',
+    description: 'Interactive project showcasing the capabilities of Three.js in 3D modeling.',
     tags: [
       {
         name: 'react',
@@ -256,8 +242,7 @@ const projects = [
   },
   {
     name: 'Metaverse Madness',
-    description:
-      'Comprehensive product site exploring the metaverse with a curated selection of products.',
+    description: 'Comprehensive product site exploring the metaverse with a curated selection of products.',
     tags: [
       {
         name: 'react',
@@ -278,8 +263,7 @@ const projects = [
   },
   {
     name: 'Bank App',
-    description:
-      'Landing page for a modern banking app showcasing clean components and beautiful graphics based on Figma design.',
+    description: 'Landing page for a modern banking app showcasing clean components and beautiful graphics based on Figma design.',
     tags: [
       {
         name: 'react',
@@ -300,8 +284,7 @@ const projects = [
   },
   {
     name: 'Yelp Camp',
-    description:
-      'Yelp-clone for searching, viewing, and creating campgrounds/comments. Requires login for use.',
+    description: 'Yelp-clone for searching, viewing, and creating campgrounds/comments. Requires login for use.',
     tags: [
       {
         name: 'bootstrap',
@@ -327,8 +310,7 @@ const projects = [
   },
   {
     name: 'Weather App',
-    description:
-      'React-based Weather App using GeoDB Cities and OpenWeather APIs for real-time weather information.',
+    description: 'React-based Weather App using GeoDB Cities and OpenWeather APIs for real-time weather information.',
     tags: [
       {
         name: 'react',
@@ -348,8 +330,7 @@ const projects = [
   },
   {
     name: 'Maps API',
-    description:
-      'GCP project utilizing Maps APIs for powerful location-based services.',
+    description: 'GCP project utilizing Maps APIs for powerful location-based services.',
     tags: [
       {
         name: 'materialui',
@@ -369,8 +350,7 @@ const projects = [
   },
   {
     name: 'Tetris',
-    description:
-      'Playable Tetris game with customizable options for a nostalgic gaming experience.',
+    description: 'Playable Tetris game with customizable options for a nostalgic gaming experience.',
     tags: [
       {
         name: 'bootstrap',
@@ -412,8 +392,7 @@ const projects = [
   },
   {
     name: 'Gallery',
-    description:
-      'A specialized image gallery designed for showcasing high-quality images.',
+    description: 'A specialized image gallery designed for showcasing high-quality images.',
     tags: [
       {
         name: 'mongodb',
@@ -433,8 +412,7 @@ const projects = [
   },
   {
     name: 'Alt Gallery',
-    description:
-      'A gallery page with a sleek sidebar and masonry grid layout for easy image navigation.',
+    description: 'A gallery page with a sleek sidebar and masonry grid layout for easy image navigation.',
     tags: [
       {
         name: 'bootstrap',

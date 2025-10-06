@@ -11,9 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav
-      className={`${styles.paddingX} border-b-2 border-nav-border w-full flex items-center fixed top-0 z-20 bg-nav`}
-    >
+    <nav className={`header-body ${styles.paddingX} border-b-2 border-nav-border w-full flex items-center fixed top-0 z-20 bg-nav`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           href="/"
@@ -24,14 +22,7 @@ const Navbar = () => {
           }}
         >
           <div className="relative w-9 h-9 content-center">
-            <Image
-              src={'/assets/logo.svg'}
-              alt="logo"
-              width={36}
-              height={36}
-              loading="lazy"
-              className="object-contain"
-            />
+            <Image src={'/assets/logo.svg'} alt="logo" width={36} height={36} priority className="object-contain" />
           </div>
           <p className="text-[1.125rem] font-bold cursor-pointer flex flex-wrap">
             Gahelrasoul&nbsp;
@@ -63,34 +54,23 @@ const Navbar = () => {
               width={36}
               height={36}
               loading="lazy"
-              className={`${
-                !toggle ? '' : 'mt-6'
-              } object-contain cursor-pointer`}
+              className={`${!toggle ? '' : 'mt-6'} object-contain cursor-pointer`}
               onClick={() => setToggle(!toggle)}
             />
           </div>
 
-          <div
-            className={`${
-              !toggle ? 'hidden' : 'flex'
-            } p-6 pt-0 top-20 right-0 mx-4 my-2 z-10 rounded-xl`}
-          >
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 pt-0 top-20 right-0 mx-4 my-2 z-10 rounded-xl`}>
             <ul className="list-none flex items-center flex-col gap-4">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${
-                    active === link.title ? 'text-highlight' : 'text-secondary'
-                  } font-poppins font-medium cursor-pointer text-[1rem]`}
+                  className={`${active === link.title ? 'text-highlight' : 'text-secondary'} font-poppins font-medium cursor-pointer text-[1rem]`}
                   onClick={() => {
                     setToggle(!toggle)
                     setActive(link.title)
                   }}
                 >
-                  <a
-                    className="px-4 py-1 hover:text-white hover:bg-btn-hover rounded-lg"
-                    href={`#${link.id}`}
-                  >
+                  <a className="px-4 py-1 hover:text-white hover:bg-btn-hover rounded-lg" href={`#${link.id}`}>
                     {link.title}
                   </a>
                 </li>

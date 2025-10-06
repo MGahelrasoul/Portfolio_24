@@ -16,7 +16,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className="relative z-0 bg-primary">{children}</body>
+      <body className="page relative z-0 bg-primary">{children}</body>
     </html>
   )
 }
