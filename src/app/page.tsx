@@ -15,10 +15,13 @@ export default function HomePage() {
       },
       autoplay: false,
     })
-      .add('.header-text h1', { opacity: [0, 1], translateY: [40, 0] }, 0)
-      .add('.header-letter', { opacity: [0, 1], translateY: [80, 0], delay: stagger(80), duration: 40 })
+      .add('.header-text h1', { opacity: [0, 1], translateY: [40, 0], delay: stagger(300) }, 0)
+      // .add('.header-text .st-1', { opacity: [0, 1], translateY: [40, 0] }, 0)
+      // .add('.header-text .st-2', { opacity: [0, 1], translateY: [40, 0] }, 300)
+      // .add('.header-text .st-3', { opacity: [0, 1], translateY: [40, 0] }, 600)
+      // .add('.header-letter', { opacity: [0, 1], translateY: [80, 0], delay: stagger(80), duration: 40 })
       .add('.header-body', { opacity: [0, 1] })
-      .add('.header-bg', { opacity: [0, 1] })
+      // .add('.header-bg', { opacity: [0, 1] })
       .init()
 
     document.fonts.ready.then(() => {

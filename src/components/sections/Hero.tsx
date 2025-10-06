@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { styles } from '@/styles'
 import Image from 'next/image'
 import Particles from '@/components/ui/Particles'
+import SplitText from '@/components/ui/SplitText'
 
 const Hero = () => {
   const renderHoverText = (text: string, className: string) => {
@@ -37,10 +38,33 @@ const Hero = () => {
             <p className={`header-body ${styles.sectionSubText} mb-4`}>Software Engineer</p>
 
             <h1 className={`${styles.heroHeadText}`}>
-              <p className={`${styles.sectionHeadText}`}>Hey! I'm</p>
+              <SplitText
+                text="Hey! I'm"
+                className={`${styles.sectionHeadText}`}
+                delay={100}
+                duration={0.6}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="center"
+              />
+              <SplitText
+                text="Mohammed Gahelrasoul"
+                className={`header-letter text-[#FFBA08] block leading-none`}
+                delay={100}
+                duration={0.6}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="left"
+              />
             </h1>
-            <h1 className={`${styles.heroHeadText}`}>{renderHoverText('Mohammed', 'text-[#FFBA08] block leading-none mt-2')}</h1>
-            <h1 className={`${styles.heroHeadText}`}>{renderHoverText('Gahelrasoul', 'text-[#FFBA08] block leading-none mt-2')}</h1>
 
             <p className={`header-body ${styles.heroSubText} mt-6 text-white-txt`}>
               I build interactive user interfaces and web applications. When I’m not building, I’m creating art, exploring games, or experimenting
@@ -57,7 +81,7 @@ const Hero = () => {
       </div>
 
       {/* <StarsCanvas /> */}
-      <div className="header-bg" style={{ width: '100%', height: '100%', position: 'relative' }}>
+      <div className="header-body" style={{ width: '100%', height: '100%', position: 'relative' }}>
         <Particles
           particleColors={['#000', '#fff', '#ffba08']}
           particleCount={600}
