@@ -2,8 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { styles } from '@/styles'
-import { StarsCanvas } from '@/components/canvas'
-import { letterVariants } from '@/utils/motion'
 import Image from 'next/image'
 import Particles from '@/components/ui/Particles'
 

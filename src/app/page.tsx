@@ -4,8 +4,7 @@ import { StarsCanvas } from '@/components/canvas'
 import { About, Contact, Experience, Hero, Tech, Works } from '@/components/sections'
 import { Navbar } from '@/components/ui'
 import { useEffect } from 'react'
-import { createTimeline } from 'animejs/timeline'
-import { stagger } from 'animejs'
+import { stagger, createTimeline } from 'animejs'
 
 export default function HomePage() {
   useEffect(() => {
