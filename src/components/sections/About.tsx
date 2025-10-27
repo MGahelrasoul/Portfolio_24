@@ -20,15 +20,18 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => {
   return (
     <Tilt
-      className="xs:max-w-[15.625rem] w-full flex-1"
+      className="sm:max-w-[15.625rem] max-w-[10rem] flex-1"
       options={{
         max: 45,
         scale: 1,
         speed: 450,
       }}
     >
-      <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)} className="w-full orange-black-gradient p-[1px] rounded-[20px] shadow-card">
-        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[17.5rem] flex justify-evenly items-center flex-col">
+      <motion.div
+        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+        className="bg-gradient-to-b from-transparent from-[95%] hover:from-[0] to-lowlight hover:to-highlight w-full p-[1px] rounded-[20px] shadow-card"
+      >
+        <div className="bg-gradient-to-t from-secondary from-[95%] hover:from-[0] to-tertiary rounded-[20px] py-5 px-12 min-h-[17.5rem] flex justify-evenly items-center flex-col">
           <div className="relative w-16 h-16">
             <Image src={icon} alt={title} width={64} height={64} loading="lazy" className="object-contain" sizes="4rem" />
           </div>
@@ -49,7 +52,7 @@ const About: React.FC = () => {
         </h2>
       </motion.div>
 
-      <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-secondary text-[1.125rem] max-w-3xl leading-[1.875rem]">
+      <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-txt text-[1.125rem] max-w-3xl leading-[1.875rem]">
         I’m a Software Engineer with 5+ years of experience building scalable, interactive web applications, with 3+ years focused on modern frontend
         development. My expertise lies in crafting performant, accessible, and visually engaging user interfaces using React, TypeScript, and Node.js.
         <br className="mb-5" />
@@ -58,7 +61,7 @@ const About: React.FC = () => {
         especially motivated by projects that bring communities together through interactive digital experiences.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10 justify-center">
+      <div className="mt-20 flex flex-wrap sm:gap-10 gap-5 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

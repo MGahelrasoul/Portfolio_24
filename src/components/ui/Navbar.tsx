@@ -7,17 +7,17 @@ import { navLinks } from '@/constants'
 import Image from 'next/image'
 
 const Navbar = () => {
-  const [active, setActive] = useState('')
+  // const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className={`header-body ${styles.paddingX} border-b-2 border-nav-border w-full flex items-center fixed top-0 z-20 bg-nav`}>
+    <nav className={`header-body ${styles.paddingX} border-b-2 border-tertiary w-full flex items-center fixed top-0 z-20 bg-secondary`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           href="/"
           className="text-white hover:text-highlight py-5 flex items-center gap-2"
           onClick={() => {
-            setActive('')
+            // setActive('')
             window.scrollTo(0, 0)
           }}
         >
@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
           <p className="text-[1.125rem] font-bold cursor-pointer flex flex-wrap">
             Gahelrasoul&nbsp;
-            <span className="">| Front End</span>
+            <span className="">| FrontEnd</span>
           </p>
         </Link>
 
@@ -34,10 +34,11 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${
-                active === link.title ? 'text-highlight' : 'text-secondary'
-              } nav-hover relative hover:text-white py-5 text-[1.125rem] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              className={
+                // ${active === link.title ? 'text-highlight' : 'text-txt'}
+                `text-txt nav-hover relative hover:text-highlight py-5 text-[1.125rem] font-medium cursor-pointer`
+              }
+              // onClick={() => setActive(link.title)}
             >
               <a className="px-4 py-1 rounded-lg" href={`#${link.id}`}>
                 {link.title}
@@ -46,31 +47,34 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="lg:hidden lg:flex-row lg:items-center flex-col items-end flex flex-1 justify-end">
-          <div className="relative w-[1.875rem] h-[1.875rem] ">
+        <div className={`${!toggle ? '' : 'py-5'} lg:hidden lg:flex-row lg:items-center flex-col items-end flex`}>
+          <div className={`${!toggle ? '' : ''} relative w-[2rem] h-[2rem] flex`}>
             <Image
               src={toggle ? 'assets/close.svg' : 'assets/menu.svg'}
               alt="menu"
-              width={36}
-              height={36}
+              width={48}
+              height={48}
               loading="lazy"
-              className={`${!toggle ? '' : 'mt-6'} object-contain cursor-pointer`}
+              className={`${!toggle ? '' : ''} m-auto object-contain cursor-pointer`}
               onClick={() => setToggle(!toggle)}
             />
           </div>
 
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 pt-0 top-20 right-0 mx-4 my-2 z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 z-10 rounded-xl`}>
             <ul className="list-none flex items-center flex-col gap-4">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${active === link.title ? 'text-highlight' : 'text-secondary'} font-poppins font-medium cursor-pointer text-[1rem]`}
+                  className={
+                    // ${active === link.title ? 'text-highlight' : 'text-txt'}
+                    `text-txt font-poppins font-medium cursor-pointer text-[1rem]`
+                  }
                   onClick={() => {
                     setToggle(!toggle)
-                    setActive(link.title)
+                    // setActive(link.title)
                   }}
                 >
-                  <a className="px-4 py-1 hover:text-white hover:bg-btn-hover rounded-lg" href={`#${link.id}`}>
+                  <a className="px-4 py-1 hover:text-highlight hover:bg-nav-border rounded-lg" href={`#${link.id}`}>
                     {link.title}
                   </a>
                 </li>

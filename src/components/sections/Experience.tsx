@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState, useEffect } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, useVelocity, useSpring, useMotionValueEvent } from 'framer-motion'
 import { styles } from '@/styles'
 import { experiences } from '@/constants'
 import { SectionWrapper } from '@/hoc'
@@ -44,8 +44,8 @@ const Experience: React.FC = () => {
   const x = useTransform(scrollYProgress, [0, 1], ['0px', cardVW])
 
   return (
-    <div ref={containerRef} className="exp-container relative" style={{ height: `${experiences.length * cardWidth}vh` }}>
-      <div className="sticky top-0 left-0 h-screen w-screen flex items-baseline flex-col justify-center gap-16">
+    <div ref={containerRef} className="exp-container relative" style={{ height: `${experiences.length * cardWidth}dvh` }}>
+      <div className="sticky top-0 left-0 h-screen w-screen flex items-baseline flex-col justify-evenly">
         <motion.div variants={textVariant()} className="">
           <p className={styles.sectionSubText}>What I have done so far</p>
           <h2 className={styles.sectionHeadText}>
@@ -57,22 +57,21 @@ const Experience: React.FC = () => {
           {experiences.map((experience, i) => (
             <div
               key={experience.title ?? i}
-              className="exp-item bg-[#0e0e0e] text-[#F48C06] shadow-[0_3px_0_#303030] box-border p-8 flex flex-col xl:min-w-[45vw] lg:min-w-[60vw] sm:min-w-[calc(100vw-8rem)] min-w-[calc(100vw-3rem)] rounded-[.25rem]"
+              className="exp-item shadow-exp xl:min-w-[45vw] lg:min-w-[60vw] sm:min-w-[calc(100vw-8rem)] min-w-[calc(100vw-3rem)] rounded-[2px] relative"
             >
-              <div className="mb-5">
-                <h3 className="text-white text-[1.5rem] font-bold mb-2">{experience.title}</h3>
+              <div className="absolute bg-tertiary px-4 py-1 rounded-ss-2xl rounded-ee-2xl w-max -top-10 left-4 border-[1px] border-card-body z-[1]">
+                <h3 className="text-white text-[1.5rem] font-bold">{experience.title}</h3>
                 <p className="text-highlight text-[1rem] font-semibold">{experience.company_name}</p>
               </div>
 
-              <ul className="mb-5 list-none space-y-2 max-w-[48rem]">
+              <ul className="relative list-none space-y-2 max-w-[48rem] bg-secondary p-8 pr-4 pb-4 rounded-[2px] border-[1px] border-tertiary h-full">
                 {experience.points.map((point, index) => (
-                  <li key={`experience-point-${index}`} className="text-white-txt text-[.875rem] px-3 py-1 tracking-wider">
+                  <li key={`experience-point-${index}`} className="text-txt text-[.875rem] px-3 py-1 tracking-wider">
                     {point}
                   </li>
                 ))}
+                <p className="absolute text-lowlight text-xs bg-tertiary border-[1px] border-card-body w-fit py-[0.125rem] px-3 -bottom-3 right-8">{experience.date}</p>
               </ul>
-
-              <p className="text-xs opacity-75 mt-auto">{experience.date}</p>
             </div>
           ))}
         </motion.div>

@@ -1,7 +1,6 @@
 'use client'
 
-import { StarsCanvas } from '@/components/canvas'
-import { About, Contact, Experience, Hero, Tech, Projects } from '@/components/sections'
+import { NotFound } from '@/components/sections'
 import { Navbar } from '@/components/ui'
 import { useEffect } from 'react'
 import { stagger, createTimeline } from 'animejs'
@@ -37,16 +36,7 @@ export default function HomePage() {
       </header>
 
       <main className="relative z-0 bg-primary">
-        <Hero />
-        <About />
-        <Tech />
-        <Experience />
-        <Projects />
-
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <NotFound />
       </main>
     </>
   )

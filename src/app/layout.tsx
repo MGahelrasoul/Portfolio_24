@@ -5,7 +5,7 @@ import '@/utils/react-refresh'
 
 export const metadata: Metadata = {
   title: 'Gahelrasoul | Portfolio',
-  description: 'Front End Portfolio built with Next.js',
+  description: 'FrontEnd Portfolio built with Next.js',
   icons: '/assets/logo.svg',
 }
 

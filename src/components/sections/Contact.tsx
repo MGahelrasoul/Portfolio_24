@@ -73,7 +73,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] bg-tertiary p-8 rounded-2xl"
+        className="flex-[0.75] bg-secondary p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact<span className='text-highlight'>.</span></h3>
@@ -83,46 +83,46 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
-          <label className="flex flex-col bg-card-body border rounded border-card-border">
-            <span className="text-card-b-txt font-medium p-3">Your Name</span>
+          <label className="flex flex-col bg-tertiary border rounded border-card-body">
+            <span className="text-border font-medium p-3">Your Name</span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-card-f-txt focus-visible:outline-card-f-txt
-                        text-white rounded rounded-t-none outlined-none border-none font-medium"
+              className="bg-secondary py-4 px-6 placeholder:text-muted focus-visible:outline-muted
+                        text-txt rounded rounded-t-none outlined-none border-none font-medium"
             />
           </label>
-          <label className="flex flex-col bg-card-body border rounded border-card-border">
-            <span className="text-card-b-txt font-medium p-3">Your Email</span>
+          <label className="flex flex-col bg-tertiary border rounded border-card-body">
+            <span className="text-border font-medium p-3">Your Email</span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-card-f-txt focus-visible:outline-card-f-txt
-                        text-white rounded rounded-t-none outlined-none border-none font-medium"
+              className="bg-secondary py-4 px-6 placeholder:text-muted focus-visible:outline-muted
+                        text-txt rounded rounded-t-none outlined-none border-none font-medium"
             />
           </label>
-          <label className="flex flex-col bg-card-body border rounded border-card-border">
-            <span className="text-card-b-txt font-medium p-3">Your Message</span>
+          <label className="flex flex-col bg-tertiary border rounded border-card-body">
+            <span className="text-border font-medium p-3">Your Message</span>
             <textarea
               // rows="7"
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="Leave your message here..."
-              className="bg-tertiary py-4 px-6 placeholder:text-card-f-txt focus-visible:outline-card-f-txt
-                        text-white rounded rounded-t-none outlined-none border-none font-medium"
+              className="bg-secondary py-4 px-6 placeholder:text-muted focus-visible:outline-muted
+                        text-txt rounded rounded-t-none outlined-none border-none font-medium"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-btn hover:bg-btn-hover py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-tertiary hover:bg-card-body py-3 px-8 outline-none w-fit text-txt font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
