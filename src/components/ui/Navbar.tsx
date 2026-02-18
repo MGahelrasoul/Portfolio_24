@@ -10,7 +10,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className={`header-body ${styles.paddingX} border-b-2 border-tertiary w-full flex items-center fixed top-0 z-20 bg-secondary`}>
+    <nav
+      className={`header-body ${styles.paddingX} border-b-2 border-tertiary w-full flex fixed top-0 z-20 bg-secondary ${toggle ? 'min-h-56 items-start' : 'items-center'}`}
+    >
       <div
         className={`w-full flex justify-between max-w-7xl mx-auto max-h-[76px] ${
           toggle ? 'items-start max-h-[264px]' : 'items-center'
