@@ -25,10 +25,6 @@ export default function HomePage() {
     })
   }, [])
 
-  // const toggle = () => {
-  //   document.body.classlist.toggle('dark')
-  // }
-
   return (
     <>
       <header className="relative">

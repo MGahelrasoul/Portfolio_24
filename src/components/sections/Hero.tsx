@@ -3,32 +3,12 @@
 import { motion } from 'framer-motion'
 import { styles } from '@/styles'
 import Image from 'next/image'
-import Particles from '@/components/ui/Particles'
-import SplitText from '@/components/ui/SplitText'
+import { SplitText } from '@/components/ui'
 
 const Hero = () => {
-  const renderHoverText = (text: string, className: string) => {
-    const words = text.split(' ')
-
-    return (
-      <div className={className} style={{ display: 'flex', flexWrap: 'wrap' }}>
-        {words.map((word, wordIndex) => (
-          <p key={`word-${wordIndex}`} style={{ display: 'flex', marginRight: '0.25em' }}>
-            {word.split('').map((char, charIndex) => (
-              <span key={`char-${wordIndex}-${charIndex}`} className="header-letter">
-                <span className="inline-block cursor-pointer hover:scale-125 transition-transform">{char}</span>
-              </span>
-            ))}
-          </p>
-        ))}
-      </div>
-    )
-  }
-
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section id="home" className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 pt-[7rem] max-w-screen-2xl mx-auto flex flex-row lg:items-baseline`}>
-        
         <div className="header-body flex flex-col justify-center items-center absolute">
           <div className="w-5 h-5 rounded-full bg-[#FFBA08]" />
           <div className="w-1 sm:h-80 h-40 orange-gradient" />
@@ -37,7 +17,6 @@ const Hero = () => {
         <div className="flex justify-between items-center lg:flex-row flex-col w-full">
           <div className="header-text max-w-xl lg:max-w-3xl w-fit mx-8 lg:mb-0 mb-8">
             <p className={`header-body ${styles.sectionSubText} mb-4`}>Software Engineer</p>
-
             <h1 className={`${styles.heroHeadText}`}>
               <SplitText
                 text="Hey! I'm"
@@ -54,7 +33,7 @@ const Hero = () => {
               />
               <SplitText
                 text="Mohammed Gahelrasoul"
-                className={`header-letter text-highlight`}
+                className={`header-letter text-highlight mt-3`}
                 delay={100}
                 duration={0.6}
                 ease="power3.out"
@@ -66,11 +45,32 @@ const Hero = () => {
                 textAlign="left"
               />
             </h1>
-
-            <p className={`header-body ${styles.heroSubText} mt-6 text-txt`}>
-              I build interactive user interfaces and web applications. When I’m not building, I’m creating art, exploring games, or experimenting
-              with AI.
+            <p className={`header-body ${styles.heroSubText} mt-6 text-txt`}>28 yo Frontend Engineer from Maryland.</p>
+            <p className={`header-body ${styles.heroSubText} mt-3 text-txt`}>
+              When I’m not building, I’m creating art, exploring games, or experimenting with AI.
             </p>
+            <ul className="header-body list-none flex gap-2 mt-6 items-center">
+              {/* <li>
+                <a href="/assets/Mohammed_Gahelrasoul_Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center border-2 rounded-md px-4 py-1 mr-2">
+                  Resume <img src="/assets/resume.svg" className="size-8" />
+                </a>
+              </li> */}
+              <li>
+                <a href="https://www.linkedin.com/in/mgahelrasoul/" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/linkedin.svg" className="size-12" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/MGahelrasoul" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/github.svg" className="size-12" />
+                </a>
+              </li>
+              <li>
+                <a href="mailto:m97gahelrasoul@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/email.svg" className="size-12" />
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div className="header-body bg-highlight overflow-hidden rounded-full border-highlight border-4">
@@ -79,20 +79,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* <StarsCanvas /> */}
-      <div className="header-body" style={{ width: '100%', height: '100%', position: 'relative' }}>
-        <Particles
-          particleColors={['#000', '#fff', '#ffba08']}
-          particleCount={600}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-        />
       </div>
 
       <motion.div

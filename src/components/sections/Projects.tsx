@@ -40,14 +40,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
           </div>
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-1">
-            <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className="bg-tertiary hover:bg-secondary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <div className="relative w-1/2 h-1/2">
-                <Image src={'/assets/github.png'} alt="github link" width={20} height={20} loading="lazy" className="object-contain" />
+            {!source_code_link ? null : (
+              <div
+                onClick={() => window.open(source_code_link, '_blank')}
+                className="bg-tertiary hover:bg-secondary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <div className="relative w-1/2 h-1/2">
+                  <Image src={'/assets/github.png'} alt="github link" width={20} height={20} loading="lazy" className="object-contain" />
+                </div>
               </div>
-            </div>
+            )}
 
             {!source_site_link ? null : (
               <div
@@ -81,18 +83,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
 const Projects: React.FC = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My works</p>
-        <h2 className={styles.sectionHeadText}>
-          Projects<span className="text-highlight">.</span>
-        </h2>
-      </motion.div>
+      <div className="max-w-7xl mx-auto">
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>My works</p>
+          <h2 className={styles.sectionHeadText}>
+            Projects<span className="text-highlight">.</span>
+          </h2>
+        </motion.div>
 
-      <div className="w-full flex">
-        <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-3 text-txt text-[1.125rem] max-w-3xl leading-[1.875rem]">
-          A collection of interactive and experimental projects that highlight my focus on frontend performance, usability, and creative interfaces.
-          Each piece demonstrates my approach to building responsive, accessible, and visually engaging experiences - from concept to deployment.
-        </motion.p>
+        <div className="w-full flex">
+          <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-3 text-txt text-[1.125rem] max-w-3xl leading-[1.875rem]">
+            A selection of hands-on projects showing how I build fast, easy to use interfaces and turn ideas into working products. Each project
+            reflects my focus on clean design, performance, and real-world usability from start to finish.
+          </motion.p>
+        </div>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7 justify-center">

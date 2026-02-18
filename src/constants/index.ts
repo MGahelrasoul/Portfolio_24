@@ -16,11 +16,11 @@ const redux = '/assets/tech/redux.png'
 const tailwind = '/assets/tech/tailwind.png'
 const typescript = '/assets/tech/typescript.png'
 
-const bk_dashboard = '/assets/bk_dashboard.png'
-const metaverse = '/assets/metaverse.png'
-const threejsp = '/assets/threejsp.png'
+const youtube_ui = '/assets/youtubeui.png'
+const grmstech = '/assets/grmstech.png'
 const altgallery = '/assets/thumb_Taste.jpg'
 const broke_brothers = '/assets/broke_brothers.png'
+const oc = '/assets/oc.png'
 
 export const navLinks = [
   {
@@ -43,19 +43,23 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Software Engineer',
+    title: 'React & TypeScript',
+    sub: '(5+ years)',
     icon: web,
   },
   {
-    title: 'React JS FrontEnd',
+    title: 'Performance optimization',
+    sub: '(LCP, FCP, bundle size)',
     icon: mobile,
   },
   {
-    title: 'Node JS BackEnd',
+    title: 'Real-time UI',
+    sub: '(chat, live data, leaderboards)',
     icon: backend,
   },
   {
-    title: 'UX/UI Development',
+    title: 'UX Systems',
+    sub: '(design systems, shared component)',
     icon: creator,
   },
 ]
@@ -113,126 +117,70 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Founder / Frontend Engineer',
-    company_name: 'Self-Employed',
+    title: 'Founding Frontend Engineer',
+    company_name: 'GRMS Technologies',
     date: 'Mar 2025 - Present',
     points: [
-      'Built a React Native (Expo) mobile app backed by FastAPI and Postgres, featuring real-time chat, media uploads, and offline caching.',
-      'Designed and maintained CI/CD pipelines with error tracking and release analytics to monitor client stability and adoption.',
-      'Focused on scalable UI patterns and resilient front-end architecture to support rapid iteration and feature delivery.',
-      'Wireframed, documented, and designed systems on the frontend and backend, prioritizing user experience.',
+      'Built a cross-platform React Native (Expo) app with real-time messaging, media uploads, and offline support.',
+      'Designed scalable frontend architecture and CI/CD pipelines to support fast iteration and stable releases.',
+      'Improved mobile performance by optimizing memory usage and frame rate across devices.',
+      'Tech: TypeScript, React, React Native, Expo, FastAPI, PostgreSQL',
     ],
   },
   {
-    title: 'Frontend Software Engineer',
+    title: 'Frontend Engineer II',
     company_name: 'Invincible GG',
     date: 'Feb 2024 - Feb 2025',
     points: [
-      'Shipped high-performance React/Redux features for an e-commerce platform serving 15k+ users.',
-      'Boosted conversion rates 18% through responsive design overhaul and mobile-first implementation.',
-      'Reduced content update latency by 50% via custom CMS dashboard implementation.',
-      'Drove a 40% improvement in load performance through bundle optimization and lazy loading.',
-      'Integrated event telemetry (Matomo) to guide retention-focused product decisions.',
+      'Built and shipped React and Redux features for an e-commerce platform serving 15k+ users.',
+      'Increased conversions by 18% through responsive and mobile-first UI improvements.',
+      'Improved load performance by 40% using bundle splitting and lazy loading.',
+      'Built real-time UI features including live leaderboards.',
+      'Tech: React, Redux, TypeScript, Webpack, Matomo',
     ],
   },
-  // {
-  //   title: 'Manager',
-  //   company_name: 'Kumon Institute Education',
-  //   date: 'Jan 2023 - Feb 2024',
-  //   points: [
-  //     'Led a team of 11 instructors while maintaining technical skills through independent React projects.',
-  //     'Analyzed learning process to identify areas for improvement, resulting in a 10% increase in assessment scores.',
-  //     'Introduced online learning through a mobile app, reducing planning and grading time by 6+ hours per week.',
-  //   ],
-  // },
   {
-    title: 'Frontend Engineer',
+    title: 'Frontend Engineer (Product)',
     company_name: 'Finding Farmers',
     date: 'May 2022 - Jan 2023',
     points: [
-      'Increased user engagement 25% by integrating Google Maps API with React-Query for data caching.',
-      'Migrated legacy JavaScript codebase to TypeScript, reducing production bugs by 30%.',
-      'Designed reusable React components library adopted across 3 product teams.',
+      'Built map-based product features that increased user engagement by 25%.',
+      'Migrated a large JavaScript codebase to TypeScript, reducing production bugs by 30%.',
+      'Designed a reusable React component library adopted across multiple teams.',
+      'Tech: React, TypeScript, React-Query, Google Maps API',
     ],
   },
   {
-    title: 'Software Engineer, Frontend',
+    title: 'Frontend Engineer',
     company_name: 'Kalo Technologies',
     date: 'Nov 2021 - May 2022',
     points: [
-      'Optimized React component performance, reducing average FCP from 2.1s to 1.3s through memoization.',
-      'Implemented atomic design system increasing UI development speed by 25%.',
-      'Coordinated with design teams to ensure clean and functional website aesthetics, tailored to stakeholder needs.',
+      'Improved React rendering performance, reducing FCP from 2.1s to 1.3%.',
+      'Built and applied a shared design system to speed up UI development.',
+      'Worked closely with designers to deliver clean, consistent interfaces.',
+      'Tech: React, JavaScript, CSS, performance profiling',
     ],
   },
   {
-    title: 'Freelance Frontend Developer',
+    title: 'Freelance Engineer (Contract)',
     company_name: 'Self-Employed',
     date: 'Apr 2021 - Nov 2021',
     points: [
-      'Delivered 15+ React web apps, widgets, and plugins with custom CSS animations and interactive overlays.',
-      'Partnered with clients to translate business goals into technical specs, delivering user-centric interfaces that reduced client revision cycles by 40% through iterative feedback workshops.',
+      'Built 15+ React apps, widgets, and plugins with custom animations and interactive UI.',
+      'Worked directly with clients to turn requirements into usable, shipped interfaces.',
+      'Reduced revision cycles through early prototypes and fast feedback.',
+      'Tech: React, JavaScript, CSS animations',
     ],
   },
-  // {
-  //   title: 'Systems & Operations',
-  //   company_name: 'GEICO',
-  //   date: 'Feb 2019 - Apr 2021',
-  //   points: [
-  //     'Improved internal CMS processes used by 60k+ agents, reducing average call resolution by 2 minutes; achieved 93% first-contact resolution for technical incidents.',
-  //     'Led imaging/configuration for 6k+ machines to migrate to Windows 10, reducing known security vulnerabilities.',
-  //   ],
-  // },
 ]
 
 const projects = [
   {
-    name: 'Broke Brothers Website',
-    description: 'Commissioned project enhancing site SEO, performance, and UI polish for an existing Squarespace site.',
-    tags: [
-      {
-        name: 'seo',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'performance',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'frontend',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: broke_brothers,
-    source_site_link: 'https://www.broke-brothers.com/',
-  },
-  {
-    name: '3D AI Showcase',
-    description: 'Interactive 3D experience combining WebGL and AI image generation (DALL·E) to explore creative model visualization.',
+    name: 'GRMS Technologies',
+    description: 'Product showcase for an ai service through custom visuals and responsive layout.',
     tags: [
       {
         name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'ai',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: threejsp,
-    source_code_link: 'https://github.com/MGahelrasoul/threejs-project',
-    source_site_link: 'https://threejs-project.space/',
-  },
-  {
-    name: 'Banking Dashboard',
-    description: 'Finance dashboard built with Next.js and TypeScript, featuring account connections, transaction history, and transfers.',
-    tags: [
-      {
-        name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
@@ -244,32 +192,95 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: bk_dashboard,
-    source_code_link: 'https://github.com/MGahelrasoul/Banking-Dashboard',
+    image: grmstech,
+    // source_code_link: 'https://github.com/MGahelrasoul/#',
+    source_site_link: 'https://grmstechnologies.com',
   },
   {
-    name: 'Metaverse Madness',
-    description: 'Product showcase exploring virtual worlds through curated 3D visuals and responsive layout.',
+    name: 'Broke Brothers LLC',
+    description: 'Commissioned project enhancing site SEO, performance, and UI polish for an existing Squarespace site.',
+    tags: [
+      {
+        name: 'seo',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'optimization',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'design',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: broke_brothers,
+    // source_code_link: 'https://github.com/MGahelrasoul/#',
+    source_site_link: 'https://www.broke-brothers.com/',
+  },
+  {
+    name: 'Youtube UI',
+    description: 'Plugin to customize YouTube layout and appearance, primarly to revert BigMode.',
+    tags: [
+      {
+        name: 'html',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: youtube_ui,
+    source_code_link: 'https://github.com/MGahelrasoul/youtube-ui',
+  },
+  {
+    name: 'OwnersClub Storefront',
+    description: 'Membership portal featuring gated content, shopping utilities, and a responsive UI optimized for performance and usability',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'node',
+        name: 'fastapi',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'sass',
         color: 'pink-text-gradient',
       },
     ],
-    image: metaverse,
-    source_code_link: 'https://github.com/MGahelrasoul/Metaversus',
-    // source_site_link: 'https://metaverse-madness.tech',
+    image: oc,
+    // source_code_link: 'https://github.com/MGahelrasoul/#',
+    source_site_link: 'https://ownersclub.invinciblegg.com/',
   },
   // {
-  //   name: 'Twitch Clone (planned)',
+  //   name: '3D AI Showcase',
+  //   description: 'Interactive 3D experience combining WebGL and AI image generation (DALL·E) to explore creative model visualization.',
+  //   tags: [
+  //     {
+  //       name: 'react',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'ai',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'tailwind',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: threejsp,
+  //   source_code_link: 'https://github.com/MGahelrasoul/#',
+  //   source_site_link: '',
+  // },
+  // {
+  //   name: 'Twitch Plugin/Extension (planned)',
   //   description: 'Live streaming platform interface with embedded video player, real-time chat, and dynamic user interactions.',
   //   tags: [
   //     {
@@ -285,8 +296,8 @@ const projects = [
   //       color: 'pink-text-gradient',
   //     },
   //   ],
-  //   image: hoobk,
-  //   source_code_link: 'https://github.com/MGahelrasoul/Bank-App',
+  //   image: twitch,
+  //   source_code_link: 'https://github.com/MGahelrasoul/#',
   //   // source_site_link: '',
   // },
   // {
@@ -294,36 +305,32 @@ const projects = [
   //   description: 'Stats dashboard using official Valorant APIs to track player performance, match history, and progress over time.',
   //   tags: [
   //     {
-  //       name: 'bootstrap',
+  //       name: 'react',
   //       color: 'blue-text-gradient',
   //     },
   //     {
-  //       name: 'node',
+  //       name: 'typescript',
   //       color: 'green-text-gradient',
   //     },
   //     {
-  //       name: 'mongodb',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'restapi',
+  //       name: 'tailwind',
   //       color: 'pink-text-gradient',
   //     },
   //   ],
-  //   image: yelpcamp,
-  //   source_code_link: 'https://github.com/MGahelrasoul/YelpCamp',
+  //   image: valotracker,
+  //   source_code_link: 'https://github.com/MGahelrasoul/#',
   //   // source_site_link: '',
   // },
   {
     name: 'Early Work',
-    description: 'Earlier explorations in API integration and UI design.',
+    description: 'Earlier explorations in API integration, UI design, and AI tools.',
     tags: [
       {
-        name: 'bootstrap',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'javascript',
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {

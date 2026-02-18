@@ -1,10 +1,11 @@
 'use client'
 
-import { StarsCanvas } from '@/components/canvas'
+// import { StarsCanvas } from '@/components/canvas'
 import { About, Contact, Experience, Hero, Tech, Projects } from '@/components/sections'
 import { Navbar } from '@/components/ui'
 import { useEffect } from 'react'
 import { stagger, createTimeline } from 'animejs'
+import { Stars } from '@/components/ui'
 
 export default function HomePage() {
   useEffect(() => {
@@ -26,10 +27,6 @@ export default function HomePage() {
     })
   }, [])
 
-  // const toggle = () => {
-  //   document.body.classlist.toggle('dark')
-  // }
-
   return (
     <>
       <header className="relative">
@@ -38,15 +35,19 @@ export default function HomePage() {
 
       <main className="relative z-0 bg-primary">
         <Hero />
-        <About />
-        <Tech />
-        <Experience />
-        <Projects />
+        <Stars />
 
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
+        <div className="bg-secondary border-t-2 border-highlight mt-8 lg:mt-0">
+          <About />
         </div>
+
+        <div className="bg-primary border-b-2 border-highlight">
+          {/* <Experience /> */}
+          <Projects />
+          <Tech />
+        </div>
+
+        <Contact />
       </main>
     </>
   )
